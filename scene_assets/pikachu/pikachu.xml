@@ -1,0 +1,48 @@
+<!-- Copyright 2024 DeepMind Technologies Limited
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<mujoco model="Pikachu">
+
+  <option solver="CG" tolerance="1e-6" timestep=".001" integrator="implicitfast"/>
+
+  <size memory="100M"/>
+
+  <visual>
+    <map stiffness="100"/>
+  </visual>
+
+
+  <asset>
+    <texture name="pikachu_diffuss" type="2d" file="textures\pikachu_LR_v2_Pikachu_MAT_AlbedoTransparen.png"/>
+    <texture name="pikachu_normal" type="2d" file="textures\pikachu_LR_v2_Pikachu_MAT_Normal.png"/>
+    <texture name="pikachu_roughness" type="2d" file="textures\pikachu_Roughness.png"/>
+
+    <material name="mat_pikachu" metallic ="0.0">
+      <layer role="rgb" texture="pikachu_diffuss"/>
+      <layer role="normal" texture="pikachu_normal"/>
+      <layer role="roughness" texture="pikachu_roughness"/>
+    </material>
+
+  </asset>
+
+  <worldbody>
+    <flexcomp type="mesh" file="pikachu_low.obj" pos="0 0 0" dim="2" euler="0 0 0"
+              radius=".001" material="mat_pikachu" mass=".05" name="softbody" dof="trilinear">
+      <elasticity young="1e3" poisson="0.1" damping="0.001" elastic2d="stretch"/>
+      <contact selfcollide="none" internal="false"/>
+    </flexcomp>
+  </worldbody>
+
+</mujoco>

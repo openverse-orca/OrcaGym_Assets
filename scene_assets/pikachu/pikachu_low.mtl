@@ -1,0 +1,12 @@
+# Blender 4.4.1 MTL File: 'pikachu.blend'
+# www.blender.org
+
+newmtl Pikachu_MAT
+Ns 200.000000
+Ka 0.500000 0.500000 0.500000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd textures/pikachu_LR_v2_Pikachu_MAT_AlbedoTransparen.png
