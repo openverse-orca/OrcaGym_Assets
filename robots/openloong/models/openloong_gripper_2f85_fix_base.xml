@@ -205,10 +205,10 @@
                       <site name="camera_wrist_r_site" size="0.01" group="3"/>
                       <camera name="camera_wrist_r" user="7080 7081"/>
                     </body>
+                    <body pos="0 -0.22 -0.033" euler="0 0 3.1415926" name="ee_center_body_r">
+                      <site size="0.010000000 0.005000000 0.005000000" rgba="0.500000000 0.500000000 0.500000000 1.000000000" pos="0.000000000 0.000000000 0.000000000" quat="1.000000000 0.000000000 0.000000000 0.000000000" group="3" type="sphere" name="ee_center_site_r"/>
+                    </body>
                     <body name="zbr_base_link" pos="0 -0.066 -0.031" quat="0 0 0.7071 -0.7071" childclass="2f85">
-                      <body pos="0 0 0.137" euler="-1.5707 -1.5707 -3.1415" name="ee_center_body_r">
-                        <site size="0.010000000 0.005000000 0.005000000" rgba="0.500000000 0.500000000 0.500000000 1.000000000" pos="0.000000000 0.000000000 0.000000000" quat="1.000000000 0.000000000 0.000000000 0.000000000" group="3" type="sphere" name="ee_center_site_r"/>
-                      </body>
                       <inertial mass="0.777441" pos="0 -2.70394e-05 0.0354675" quat="1 -0.00152849 0 0" diaginertia="0.000260285 0.000225381 0.000152708"/>
                       <geom class="visual_2f85" pos="0 0 0.0108" quat="0 0 0 1" mesh="base"/>
                       <geom class="visual_2f85" pos="0 0 0.004" quat="1 -1 0 0" mesh="base_coupling"/>
@@ -321,10 +321,10 @@
                       <site name="camera_wrist_l_site" size="0.01" group="3"/>
                       <camera name="camera_wrist_l" user="7090 7091"/>
                     </body>
+                    <body pos="0 0.22 -0.033" name="ee_center_body">
+                      <site size="0.010000000 0.005000000 0.005000000" rgba="0.500000000 0.500000000 0.500000000 1.000000000" pos="0.000000000 0.000000000 0.000000000" quat="1.000000000 0.000000000 0.000000000 0.000000000" group="3" type="sphere" name="ee_center_site"/>
+                    </body>
                     <body name="zbll_base_link" pos="0 0.066 -0.031" quat="0.7071 -0.7071 0 0" childclass="2f85">
-                      <body pos="0 0 0.137" euler="1.5707 1.5707 0" name="ee_center_body">
-                        <site size="0.010000000 0.005000000 0.005000000" rgba="0.500000000 0.500000000 0.500000000 1.000000000" pos="0.000000000 0.000000000 0.000000000" quat="1.000000000 0.000000000 0.000000000 0.000000000" group="3" type="sphere" name="ee_center_site"/>
-                      </body>
                       <inertial mass="0.777441" pos="0 -2.70394e-05 0.0354675" quat="1 -0.00152849 0 0" diaginertia="0.000260285 0.000225381 0.000152708"/>
                       <geom class="visual_2f85" pos="0 0 0.0108" quat="0 0 0 1" mesh="base"/>
                       <geom class="visual_2f85" pos="0 0 0.004" quat="1 -1 0 0" mesh="base_coupling"/>
