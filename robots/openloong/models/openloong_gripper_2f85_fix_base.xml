@@ -159,7 +159,7 @@
           <geom type="mesh" group="3" mesh="Link_head_pitch"/>
           <body pos="0 0.03 0" euler="0 0 0" name="neck_center_body">
             <site size="0.010000000 0.005000000 0.005000000" rgba="0.500000000 0.500000000 0.500000000 1.000000000" pos="0.000000000 0.000000000 0.000000000" quat="1.000000000 0.000000000 0.000000000 0.000000000" group="3" type="sphere" name="neck_center_site"/>
-            <body name="camera_head" pos="0.02 0 0.15" euler="0.0 1.5708 -1.5708">
+            <body name="camera_head" pos="0.02 0 0.15" euler="0.0 0.0 -1.5708">
               <site name="camera_head_site" size="0.01" group="3"/>
               <camera name="camera_head" user="7070 7071" fovy="75"/>
             </body>
@@ -201,7 +201,7 @@
                     <joint name="J_arm_r_07" pos="0 0 0" axis="0 0 1" limited="true" range="-1.0472 1.0472" damping="1.0"/>
                     <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="Link_arm_r_07" material="pbr_metal_gray"/>
                     <geom type="mesh" group="3" mesh="Link_arm_r_07"/>
-                    <body name="camera_wrist_r" pos="0 0 -0.15" euler="1.0472 0 0">
+                    <body name="camera_wrist_r" pos="0 0 -0.15" euler="2.618 0 0">
                       <site name="camera_wrist_r_site" size="0.01" group="3"/>
                       <camera name="camera_wrist_r" user="7080 7081"/>
                     </body>
@@ -317,7 +317,7 @@
                     <joint name="J_arm_l_07" pos="0 0 0" axis="0 0 1" limited="true" range="-1.0472 1.0472" damping="1.0"/>
                     <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="Link_arm_l_07" material="pbr_metal_gray"/>
                     <geom type="mesh" group="3" mesh="Link_arm_l_07"/>
-                    <body name="camera_wrist_l" pos="0 0 -0.15" euler="-1.0472 0 3.1416">
+                    <body name="camera_wrist_l" pos="0 0 -0.15" euler="-2.618 0 3.1416">
                       <site name="camera_wrist_l_site" size="0.01" group="3"/>
                       <camera name="camera_wrist_l" user="7090 7091"/>
                     </body>
