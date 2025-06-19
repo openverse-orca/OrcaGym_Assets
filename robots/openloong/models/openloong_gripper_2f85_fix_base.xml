@@ -131,12 +131,6 @@
       <geom conaffinity="0" contype="0" pos="0 0 0.3" rgba="0 0 0.7 0.5" size="0.005 0.005 0.3" type="box" group="3"></geom>
     </body>
 
-    <body name="neckMocap" pos="0 0 0" mocap="true">
-      <geom conaffinity="0" contype="0" pos="0.3 0 0" rgba="0.7 0 0 0.5" size="0.3 0.005 0.005" type="box" group="3"></geom>
-      <geom conaffinity="0" contype="0" pos="0 0.3 0" rgba="0 0.7 0 0.5" size="0.005 0.3 0.005" type="box" group="3"></geom>
-      <geom conaffinity="0" contype="0" pos="0 0 0.3" rgba="0 0 0.7 0.5" size="0.005 0.005 0.3" type="box" group="3"></geom>
-    </body>
-
     <body name="base_link" pos="0 0 1.2">      <!--zero position: posz=1.14   -->
       <!-- <freejoint name="float_base" /> -->
       <inertial pos="-0.0056641 -0.0013367 0.23829" mass="22.447" fullinertia="0.3742 0.27691 0.22104 0.0009471 0.004646 0.0040142" />
@@ -149,17 +143,17 @@
       </body>      
       <body name="Link_head_yaw" pos="0.009 0 0.4064">
         <inertial pos="4.6974e-12 -0.0020814 0.044801" quat="0.706933 -0.0156756 0.0156771 0.706933" mass="0.84249" diaginertia="0.000700588 0.000629 0.000553812"/>
-        <joint name="J_head_yaw" pos="0 0 0" axis="0 0 1" limited="true" range="-1.5708 1.5708" damping="1.0"/>
+        <!-- <joint name="J_head_yaw" pos="0 0 0" axis="0 0 1" limited="true" range="-1.5708 1.5708" damping="1.0"/> -->
         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="Link_head_yaw" material="pbr_plastic_black"/>
         <geom type="mesh" group="3" mesh="Link_head_yaw"/>
         <body name="Link_head_pitch" pos="0 -0.0346 0.0485">
           <inertial pos="0.020569 0.033004 0.125" quat="0.97339 0.00840682 0.228157 0.0196249" mass="1.3943" diaginertia="0.0063814 0.00628994 0.00448146"/>
-          <joint name="J_head_pitch" pos="0 0 0" axis="0 -1 0" limited="true" range="-0.7854 0.7854" damping="1.0"/>
+          <!-- <joint name="J_head_pitch" pos="0 0 0" axis="0 -1 0" limited="true" range="-0.7854 0.7854" damping="1.0"/> -->
           <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="Link_head_pitch" material="pbr_plastic_black"/>
           <geom type="mesh" group="3" mesh="Link_head_pitch"/>
           <body pos="0 0.03 0" euler="0 0 0" name="neck_center_body">
             <site size="0.010000000 0.005000000 0.005000000" rgba="0.500000000 0.500000000 0.500000000 1.000000000" pos="0.000000000 0.000000000 0.000000000" quat="1.000000000 0.000000000 0.000000000 0.000000000" group="3" type="sphere" name="neck_center_site"/>
-            <body name="camera_head" pos="0.02 0 0.15" euler="0.0 0.0 -1.5708">
+            <body name="camera_head" pos="0.02 0 0.15" euler="0.0 0.6981 -1.5708">
               <site name="camera_head_site" size="0.01" group="3"/>
               <camera name="camera_head" user="7070 7071" fovy="75"/>
             </body>
@@ -582,8 +576,8 @@
     <motor name="M_arm_r_06" joint="J_arm_r_06" gear="1" ctrllimited="true" ctrlrange="-12.4 12.4"/>
     <motor name="M_arm_r_07" joint="J_arm_r_07" gear="1" ctrllimited="true" ctrlrange="-12.4 12.4"/>
 
-    <motor name="M_head_yaw" joint="J_head_yaw" gear="1" ctrllimited="true" ctrlrange="-26 26"/>
-    <motor name="M_head_pitch" joint="J_head_pitch" gear="1" ctrllimited="true" ctrlrange="-26 26"/>
+    <!-- <motor name="M_head_yaw" joint="J_head_yaw" gear="1" ctrllimited="true" ctrlrange="-26 26"/>
+    <motor name="M_head_pitch" joint="J_head_pitch" gear="1" ctrllimited="true" ctrlrange="-26 26"/> -->
 
     <general class="2f85" name="l_fingers_actuator" tendon="l_split" forcerange="-5 5" ctrlrange="0 255" gainprm="0.3137255 0 0" biasprm="0 -100 -10"/>
     <general class="2f85" name="r_fingers_actuator" tendon="r_split" forcerange="-5 5" ctrlrange="0 255" gainprm="0.3137255 0 0" biasprm="0 -100 -10"/>
