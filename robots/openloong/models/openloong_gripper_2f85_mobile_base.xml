@@ -131,6 +131,9 @@
       <default class="wheeled_chassis_visual">
         <geom type="mesh" contype="0" conaffinity="0" group="1" material="pbr_metal_gray"/>
       </default>
+      <default class="wheeled_chassis_collision">
+        <geom type="mesh" contype="1" conaffinity="1" group="3"/>
+      </default>
       <default class="wheeled_chassis_wheel_visual">
         <geom type="mesh" contype="0" conaffinity="0" group="1" material="pbr_plastic_black"/>
       </default>
@@ -193,13 +196,7 @@
       <geom conaffinity="0" contype="0" pos="0 0 0.3" rgba="0 0 0.7 0.5" size="0.005 0.005 0.3" type="box" group="3"></geom>
     </body>
 
-    <body name="neckMocap" pos="0 0 0" mocap="true">
-      <geom conaffinity="0" contype="0" pos="0.3 0 0" rgba="0.7 0 0 0.5" size="0.3 0.005 0.005" type="box" group="3"></geom>
-      <geom conaffinity="0" contype="0" pos="0 0.3 0" rgba="0 0.7 0 0.5" size="0.005 0.3 0.005" type="box" group="3"></geom>
-      <geom conaffinity="0" contype="0" pos="0 0 0.3" rgba="0 0 0.7 0.5" size="0.005 0.005 0.3" type="box" group="3"></geom>
-    </body>
-
-    <body name="base_link" pos="0 0 1.25">      <!--zero position: posz=1.14   -->
+    <body name="base_link" pos="0 0 0.95">      <!--zero position: posz=1.14   -->
       <freejoint name="float_base" />
       <inertial pos="-0.0056641 -0.0013367 0.23829" mass="22.447" fullinertia="0.3742 0.27691 0.22104 0.0009471 0.004646 0.0040142" />
       <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="base_link" material="pbr_metal_gray"/>
@@ -210,10 +207,12 @@
         <geom type="sphere" size="0.01 0 0" group="3" density="1000"/>
       </body>      
 
-      <body name="wheeled_chassis_link" pos="-0.25 0 -0.95" euler="0 0 1.5708">
+      <body name="wheeled_chassis_link" pos="-0.25 0 -0.65" euler="0 0 1.5708">
         <inertial pos="0 0 0" mass="100" />
         <geom class="wheeled_chassis_visual" mesh="base_link_underpan"/>
         <geom class="wheeled_chassis_visual" mesh="body_base_link"/>
+        <geom class="wheeled_chassis_collision" mesh="base_link_underpan"/>
+        <geom class="wheeled_chassis_collision" mesh="body_base_link"/>
         <body name="link_right_spring" pos="-0.148 0.015574 -0.20">
           <inertial pos="-0.024898 0 0" mass="10" diaginertia="0.0033125 0.0018066 0.0018066"/>
           <joint name="joint_right_spring" pos="0 0 0" axis="0 0 1" type="slide" springref="0" range="-0.07 0.07" springdamper="29500 1500"/>
@@ -284,17 +283,17 @@
       
       <body name="Link_head_yaw" pos="0.009 0 0.4064">
         <inertial pos="4.6974e-12 -0.0020814 0.044801" quat="0.706933 -0.0156756 0.0156771 0.706933" mass="0.84249" diaginertia="0.000700588 0.000629 0.000553812"/>
-        <joint name="J_head_yaw" pos="0 0 0" axis="0 0 1" limited="true" range="-1.5708 1.5708" damping="1.0"/>
+        <!-- <joint name="J_head_yaw" pos="0 0 0" axis="0 0 1" limited="true" range="-1.5708 1.5708" damping="1.0"/> -->
         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="Link_head_yaw" material="pbr_plastic_black"/>
         <geom type="mesh" group="3" mesh="Link_head_yaw"/>
         <body name="Link_head_pitch" pos="0 -0.0346 0.0485">
           <inertial pos="0.020569 0.033004 0.125" quat="0.97339 0.00840682 0.228157 0.0196249" mass="1.3943" diaginertia="0.0063814 0.00628994 0.00448146"/>
-          <joint name="J_head_pitch" pos="0 0 0" axis="0 -1 0" limited="true" range="-0.7854 0.7854" damping="1.0"/>
+          <!-- <joint name="J_head_pitch" pos="0 0 0" axis="0 -1 0" limited="true" range="-0.7854 0.7854" damping="1.0"/> -->
           <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="Link_head_pitch" material="pbr_plastic_black"/>
           <geom type="mesh" group="3" mesh="Link_head_pitch"/>
           <body pos="0 0.03 0" euler="0 0 0" name="neck_center_body">
             <site size="0.010000000 0.005000000 0.005000000" rgba="0.500000000 0.500000000 0.500000000 1.000000000" pos="0.000000000 0.000000000 0.000000000" quat="1.000000000 0.000000000 0.000000000 0.000000000" group="3" type="sphere" name="neck_center_site"/>
-            <body name="camera_head" pos="0.02 0 0.15" euler="0.0 0.0 -1.5708">
+            <body name="camera_head" pos="0.02 0 0.15" euler="0.0 0.6981 -1.5708">
               <site name="camera_head_site" size="0.01" group="3"/>
               <camera name="camera_head" user="7070 7071" fovy="75"/>
             </body>
@@ -340,10 +339,10 @@
                       <site name="camera_wrist_r_site" size="0.01" group="3"/>
                       <camera name="camera_wrist_r" user="7080 7081"/>
                     </body>
+                    <body pos="0 -0.22 -0.033" euler="0 0 3.1415926" name="ee_center_body_r">
+                      <site size="0.010000000 0.005000000 0.005000000" rgba="0.500000000 0.500000000 0.500000000 1.000000000" pos="0.000000000 0.000000000 0.000000000" quat="1.000000000 0.000000000 0.000000000 0.000000000" group="3" type="sphere" name="ee_center_site_r"/>
+                    </body>
                     <body name="zbr_base_link" pos="0 -0.066 -0.031" quat="0 0 0.7071 -0.7071" childclass="2f85">
-                      <body pos="0 0 0.137" euler="-1.5707 -1.5707 -3.1415" name="ee_center_body_r">
-                        <site size="0.010000000 0.005000000 0.005000000" rgba="0.500000000 0.500000000 0.500000000 1.000000000" pos="0.000000000 0.000000000 0.000000000" quat="1.000000000 0.000000000 0.000000000 0.000000000" group="3" type="sphere" name="ee_center_site_r"/>
-                      </body>
                       <inertial mass="0.777441" pos="0 -2.70394e-05 0.0354675" quat="1 -0.00152849 0 0" diaginertia="0.000260285 0.000225381 0.000152708"/>
                       <geom class="visual_2f85" pos="0 0 0.0108" quat="0 0 0 1" mesh="base"/>
                       <geom class="visual_2f85" pos="0 0 0.004" quat="1 -1 0 0" mesh="base_coupling"/>
@@ -456,10 +455,10 @@
                       <site name="camera_wrist_l_site" size="0.01" group="3"/>
                       <camera name="camera_wrist_l" user="7090 7091"/>
                     </body>
+                    <body pos="0 0.22 -0.033" name="ee_center_body">
+                      <site size="0.010000000 0.005000000 0.005000000" rgba="0.500000000 0.500000000 0.500000000 1.000000000" pos="0.000000000 0.000000000 0.000000000" quat="1.000000000 0.000000000 0.000000000 0.000000000" group="3" type="sphere" name="ee_center_site"/>
+                    </body>
                     <body name="zbll_base_link" pos="0 0.066 -0.031" quat="0.7071 -0.7071 0 0" childclass="2f85">
-                      <body pos="0 0 0.137" euler="1.5707 1.5707 0" name="ee_center_body">
-                        <site size="0.010000000 0.005000000 0.005000000" rgba="0.500000000 0.500000000 0.500000000 1.000000000" pos="0.000000000 0.000000000 0.000000000" quat="1.000000000 0.000000000 0.000000000 0.000000000" group="3" type="sphere" name="ee_center_site"/>
-                      </body>
                       <inertial mass="0.777441" pos="0 -2.70394e-05 0.0354675" quat="1 -0.00152849 0 0" diaginertia="0.000260285 0.000225381 0.000152708"/>
                       <geom class="visual_2f85" pos="0 0 0.0108" quat="0 0 0 1" mesh="base"/>
                       <geom class="visual_2f85" pos="0 0 0.004" quat="1 -1 0 0" mesh="base_coupling"/>
@@ -576,7 +575,13 @@
     <exclude body1="r_right_coupler" body2="r_right_follower"/>
     <exclude body1="r_left_coupler" body2="r_left_follower"/>
 
-    <exclude name="ex_left_wheel_right_wheel" body1="base_link" body2="dummy_body" />
+    <exclude name="ex_wheeled_chassis_link_link_right_wheel" body1="wheeled_chassis_link" body2="link_right_wheel"/>
+    <exclude name="ex_wheeled_chassis_link_link_left_wheel" body1="wheeled_chassis_link" body2="link_left_wheel"/>
+    <exclude name="ex_wheeled_chassis_link_link_swivel_wheel_1_2" body1="wheeled_chassis_link" body2="link_swivel_wheel_1_2"/>
+    <exclude name="ex_wheeled_chassis_link_link_swivel_wheel_2_2" body1="wheeled_chassis_link" body2="link_swivel_wheel_2_2"/>
+    <exclude name="ex_wheeled_chassis_link_link_swivel_wheel_3_2" body1="wheeled_chassis_link" body2="link_swivel_wheel_3_2"/>
+    <exclude name="ex_wheeled_chassis_link_link_swivel_wheel_4_2" body1="wheeled_chassis_link" body2="link_swivel_wheel_4_2"/>
+    <exclude name="ex_link_right_wheel_link_left_wheel" body1="link_right_wheel" body2="link_left_wheel"/>
   </contact>
 
   <actuator>
@@ -612,8 +617,8 @@
     <motor name="M_arm_r_06" joint="J_arm_r_06" gear="1" ctrllimited="true" ctrlrange="-12.4 12.4"/>
     <motor name="M_arm_r_07" joint="J_arm_r_07" gear="1" ctrllimited="true" ctrlrange="-12.4 12.4"/>
 
-    <motor name="M_head_yaw" joint="J_head_yaw" gear="1" ctrllimited="true" ctrlrange="-26 26"/>
-    <motor name="M_head_pitch" joint="J_head_pitch" gear="1" ctrllimited="true" ctrlrange="-26 26"/>
+    <!-- <motor name="M_head_yaw" joint="J_head_yaw" gear="1" ctrllimited="true" ctrlrange="-26 26"/>
+    <motor name="M_head_pitch" joint="J_head_pitch" gear="1" ctrllimited="true" ctrlrange="-26 26"/> -->
 
     <general class="2f85" name="l_fingers_actuator" tendon="l_split" forcerange="-5 5" ctrlrange="0 255" gainprm="0.3137255 0 0" biasprm="0 -100 -10"/>
     <general class="2f85" name="r_fingers_actuator" tendon="r_split" forcerange="-5 5" ctrlrange="0 255" gainprm="0.3137255 0 0" biasprm="0 -100 -10"/>
