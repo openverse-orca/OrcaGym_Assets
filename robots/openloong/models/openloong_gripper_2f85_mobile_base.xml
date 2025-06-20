@@ -196,7 +196,7 @@
       <geom conaffinity="0" contype="0" pos="0 0 0.3" rgba="0 0 0.7 0.5" size="0.005 0.005 0.3" type="box" group="3"></geom>
     </body>
 
-    <body name="base_link" pos="0 0 0.95">      <!--zero position: posz=1.14   -->
+    <body name="base_link" pos="0 0 1.1">      <!--zero position: posz=1.14   -->
       <freejoint name="float_base" />
       <inertial pos="-0.0056641 -0.0013367 0.23829" mass="22.447" fullinertia="0.3742 0.27691 0.22104 0.0009471 0.004646 0.0040142" />
       <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="base_link" material="pbr_metal_gray"/>
@@ -207,7 +207,7 @@
         <geom type="sphere" size="0.01 0 0" group="3" density="1000"/>
       </body>      
 
-      <body name="wheeled_chassis_link" pos="-0.25 0 -0.65" euler="0 0 1.5708">
+      <body name="wheeled_chassis_link" pos="-0.25 0 -0.8" euler="0 0 1.5708">
         <inertial pos="0 0 0" mass="100" />
         <geom class="wheeled_chassis_visual" mesh="base_link_underpan"/>
         <geom class="wheeled_chassis_visual" mesh="body_base_link"/>
