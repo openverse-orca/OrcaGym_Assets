@@ -139,6 +139,7 @@
       <site name="imu" quat="1 0 0 0"/>
       <body name="dummy_body" pos="0 0 0.3">
         <joint name="dummy_joint" pos="0 0 0" axis="0 0 1" limited="false"/>
+        <site size="0.010000000 0.005000000 0.005000000" rgba="0.500000000 0.500000000 0.500000000 1.000000000" pos="0.000000000 0.000000000 0.000000000" quat="1.000000000 0.000000000 0.000000000 0.000000000" group="3" type="sphere" name="dummy_site"/>
         <geom type="sphere" size="0.01 0 0" group="3" density="1000"/>
       </body>      
       <body name="Link_head_yaw" pos="0.009 0 0.4064">
