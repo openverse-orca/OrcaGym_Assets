@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "OrcaGym_Assets"         # 修改为你的项目名称
+version = "25.7.2"                  # 修改为项目版本
+description = "OrcaGym_Assets"
+readme = "README.md"
+requires-python = ">=3.9"
+# 项目依赖，直接对应你的 requirements.txt 列表
+dependencies = [
+    "orcagym==25.7.2",  # OrcaGym 版本
+]
+
+# 可选依赖，可用于开发调试、测试、格式化代码等用途
+[project.optional-dependencies]
+dev = [
+]
+
+[tool.setuptools.packages.find]
+# 如果项目源码在 src/ 目录下，请取消下面的注释，并确保目录结构正确
+# where = ["src"]
+
+# 如果源码就在项目根目录下，此项可以忽略，setuptools 会自动发现
