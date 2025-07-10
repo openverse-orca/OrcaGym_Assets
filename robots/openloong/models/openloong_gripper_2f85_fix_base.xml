@@ -196,7 +196,7 @@
                     <joint name="J_arm_r_07" pos="0 0 0" axis="0 0 1" limited="true" range="-1.0472 1.0472" damping="1.0"/>
                     <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="Link_arm_r_07" material="pbr_metal_gray"/>
                     <geom type="mesh" group="3" mesh="Link_arm_r_07"/>
-                    <body name="camera_wrist_r" pos="0 0 -0.15" euler="2.618 0 0">
+                    <body name="camera_wrist_r" pos="0 0.27 -0.247" euler="2.885 0 0">
                       <site name="camera_wrist_r_site" size="0.01" group="3"/>
                       <camera name="camera_wrist_r" user="7080 7081"/>
                     </body>
@@ -312,7 +312,7 @@
                     <joint name="J_arm_l_07" pos="0 0 0" axis="0 0 1" limited="true" range="-1.0472 1.0472" damping="1.0"/>
                     <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="Link_arm_l_07" material="pbr_metal_gray"/>
                     <geom type="mesh" group="3" mesh="Link_arm_l_07"/>
-                    <body name="camera_wrist_l" pos="0 0 -0.15" euler="-2.618 0 3.1416">
+                    <body name="camera_wrist_l" pos="0 -0.287 -0.27" euler="-2.618 0 -3.142">
                       <site name="camera_wrist_l_site" size="0.01" group="3"/>
                       <camera name="camera_wrist_l" user="7090 7091"/>
                     </body>
