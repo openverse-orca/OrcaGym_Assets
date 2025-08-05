@@ -34,8 +34,8 @@
         </material>
 
 
-        <hfield name="perlin_hfield" size="6.4 6.4 0.2 0.5" file="height_field.png"/>
-        <hfield name="perlin_hfield_rough" size="6.4 6.4 0.2 0.5" file="height_field_rough.png"/>
+        <hfield name="perlin_hfield" size="5.12 5.12 0.4 0.5" file="height_field.png"/>
+        <hfield name="perlin_hfield_rough" size="5.12 5.12 0.4 0.5" file="height_field_rough.png"/>
     </asset>
     <worldbody>
         <body name="offset" pos="0 0 0">
@@ -96,10 +96,10 @@
             </body>
 
             <body name="height_filed" pos="-20 10 0">
-                <geom type="hfield" hfield="perlin_hfield" pos="0.0   0.0   0.0" euler="0 -4  0" material="pbr_plastic_gray"/>
-                <geom type="hfield" hfield="perlin_hfield_rough" pos="12.8  0.0   0.5" material="pbr_plastic_gray"/>
-                <geom type="hfield" hfield="perlin_hfield_rough" pos="25.5  0.0   1.6" euler="0 -10  0" material="pbr_plastic_gray"/>
-                <geom type="hfield" hfield="perlin_hfield" pos="37.3   0.0   -0.5" euler="0 30  0" material="pbr_plastic_gray"/>
+                <geom type="hfield" hfield="perlin_hfield" pos="0.0   0.0   0.1" euler="0 -4  0" material="pbr_plastic_gray"/>
+                <geom type="hfield" hfield="perlin_hfield_rough" pos="10.20  0.0   0.5" material="pbr_plastic_gray"/>
+                <geom type="hfield" hfield="perlin_hfield_rough" pos="20.4  0.0   1.4" euler="0 -10  0" material="pbr_plastic_gray"/>
+                <geom type="hfield" hfield="perlin_hfield" pos="29.6   0.0   -0.3" euler="0 30  0" material="pbr_plastic_gray"/>
             </body>
 
             <body name="brics" pos="-20 -20 -0.15">
