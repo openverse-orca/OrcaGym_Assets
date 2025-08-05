@@ -6,9 +6,9 @@
   <default>
     <default class="go2">
       <geom friction="0.6" margin="0.001" condim="1"/>
-      <joint axis="0 1 0" damping="0.5" armature="0.01"/>
-      <position kp="45" dampratio="1" inheritrange="1"/>
-      <!-- <motor ctrlrange="-23.7 23.7"/> -->
+      <joint axis="0 1 0" damping="0.5"/>
+      <!-- <position kp="45" dampratio="1" inheritrange="1"/> -->
+      <motor ctrlrange="-23.7 23.7"/>
       <default class="abduction">
         <joint axis="1 0 0" range="-1.0472 1.0472"/>
       </default>
@@ -22,13 +22,13 @@
       </default>
       <default class="knee">
         <joint range="-2.7227 -0.83776"/>
-        <!-- <motor ctrlrange="-45.43 45.43"/> -->
+        <motor ctrlrange="-45.43 45.43"/>
       </default>
       <default class="visual">
         <geom type="mesh" contype="0" conaffinity="0" group="2"/>
       </default>
       <default class="collision">
-        <geom group="3"/>
+        <geom group="3" contype="2" conaffinity="1"/>
         <default class="foot">
           <!-- <geom size="0.023" pos="-0.002 0 -0.213" priority="1" solimp="0.015 1 0.022" condim="6"
             friction="1.0 0.2 0.01"/> -->
@@ -280,24 +280,23 @@
     </body>
   </worldbody>
 
-  <!-- <actuator>
-    <motor class="abduction" name="FR_hip_actuator" joint="FR_hip_joint"/>
-    <motor class="hip" name="FR_thigh_actuator" joint="FR_thigh_joint"/>
-    <motor class="knee" name="FR_calf_actuator" joint="FR_calf_joint"/>
+  <actuator>
     <motor class="abduction" name="FL_hip_actuator" joint="FL_hip_joint"/>
     <motor class="hip" name="FL_thigh_actuator" joint="FL_thigh_joint"/>
     <motor class="knee" name="FL_calf_actuator" joint="FL_calf_joint"/>
+    <motor class="abduction" name="FR_hip_actuator" joint="FR_hip_joint"/>
+    <motor class="hip" name="FR_thigh_actuator" joint="FR_thigh_joint"/>
+    <motor class="knee" name="FR_calf_actuator" joint="FR_calf_joint"/>
+    <motor class="abduction" name="RL_hip_actuator" joint="RL_hip_joint"/>
+    <motor class="hip" name="RL_thigh_actuator" joint="RL_thigh_joint"/>
+    <motor class="knee" name="RL_calf_actuator" joint="RL_calf_joint"/>    
     <motor class="abduction" name="RR_hip_actuator" joint="RR_hip_joint"/>
     <motor class="hip" name="RR_thigh_actuator" joint="RR_thigh_joint"/>
     <motor class="knee" name="RR_calf_actuator" joint="RR_calf_joint"/>
-    <motor class="abduction" name="RL_hip_actuator" joint="RL_hip_joint"/>
-    <motor class="hip" name="RL_thigh_actuator" joint="RL_thigh_joint"/>
-    <motor class="knee" name="RL_calf_actuator" joint="RL_calf_joint"/>
-  </actuator> -->
+  </actuator>
 
-
+<!-- 
   <actuator>
-    <!-- 前左腿 -->
     <position name="FL_hip_actuator" joint="FL_hip_joint" class="go2" 
               forcelimited="true" forcerange="-23.7 23.7"/>
     <position name="FL_thigh_actuator" joint="FL_thigh_joint" class="go2" 
@@ -305,7 +304,6 @@
     <position name="FL_calf_actuator" joint="FL_calf_joint" class="go2"
               forcelimited="true" forcerange="-45.43 45.43"/>
 
-    <!-- 前右腿 -->
     <position name="FR_hip_actuator" joint="FR_hip_joint" class="go2"
               forcelimited="true" forcerange="-23.7 23.7"/>
     <position name="FR_thigh_actuator" joint="FR_thigh_joint" class="go2"
@@ -313,7 +311,6 @@
     <position name="FR_calf_actuator" joint="FR_calf_joint" class="go2"
               forcelimited="true" forcerange="-45.43 45.43"/>
 
-    <!-- 后左腿 -->
     <position name="RL_hip_actuator" joint="RL_hip_joint" class="go2"
               forcelimited="true" forcerange="-23.7 23.7"/>
     <position name="RL_thigh_actuator" joint="RL_thigh_joint" class="go2"
@@ -321,14 +318,13 @@
     <position name="RL_calf_actuator" joint="RL_calf_joint" class="go2"
               forcelimited="true" forcerange="-45.43 45.43"/>
 
-    <!-- 后右腿 -->
     <position name="RR_hip_actuator" joint="RR_hip_joint" class="go2"
               forcelimited="true" forcerange="-23.7 23.7"/>
     <position name="RR_thigh_actuator" joint="RR_thigh_joint" class="go2"
               forcelimited="true" forcerange="-23.7 23.7"/>
     <position name="RR_calf_actuator" joint="RR_calf_joint" class="go2"
               forcelimited="true" forcerange="-45.43 45.43"/>
-  </actuator>
+  </actuator> -->
 
 
   <sensor>
