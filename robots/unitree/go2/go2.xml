@@ -6,8 +6,7 @@
   <default>
     <default class="go2">
       <geom friction="0.6" margin="0.001" condim="1"/>
-      <joint axis="0 1 0" damping="0.5"/>
-      <!-- <position kp="45" dampratio="1" inheritrange="1"/> -->
+      <joint axis="0 1 0" damping="0.5" armature="0.01" frictionloss="0.2"/>
       <motor ctrlrange="-23.7 23.7"/>
       <default class="abduction">
         <joint axis="1 0 0" range="-1.0472 1.0472"/>
@@ -30,10 +29,23 @@
       <default class="collision">
         <geom group="3" contype="2" conaffinity="1"/>
         <default class="foot">
-          <!-- <geom size="0.023" pos="-0.002 0 -0.213" priority="1" solimp="0.015 1 0.022" condim="6"
-            friction="1.0 0.2 0.01"/> -->
-          <geom type="sphere" size="0.03" friction="1 0.005 0.0001" pos="-0.002 0 -0.213" priority="1"
-               solref="0.02 1" solimp="0.9 0.4 0.01" margin="0.01" gap="0.001"/>
+
+          <!-- 社区版本 -->
+          <!-- <geom size="0.022" pos="-0.002 0 -0.213" priority="1" solimp="0.015 1 0.022" condim="6"
+            friction="0.8 0.02 0.01"/> -->
+
+          <!-- 保留6D接触模型 -->
+          <!-- 优化接触刚度 -->
+          <!-- 关键修复：物理级摩擦 -->
+          <!-- 增强接触稳定性 -->
+          <geom size="0.025" 
+                pos="-0.002 0 -0.213" 
+                priority="1"
+                condim="4"                       
+                solimp="0.9 0.5 0.01"            
+                friction="1.0 0.45 0.35"        
+                solref="0.02 1.2"/>              
+
         </default>
         <default class="foot_site">
           <site size="0.05" pos="-0.002 0 -0.213" group="3"/>
@@ -153,7 +165,7 @@
       <geom mesh="base_2" material="pbr_plastic_black" class="visual"/>
       <geom mesh="base_3" material="pbr_plastic_white" class="visual"/>
       <geom mesh="base_4" material="pbr_plastic_gray" class="visual"/>
-      <geom size="0.1881 0.04675 0.06" type="box" class="collision"/>
+      <geom size="0.1881 0.04675 0.057" type="box" class="collision"/>
       <geom size="0.05 0.045" pos="0.285 0 0.01" type="cylinder" class="collision"/>
       <geom size="0.047" pos="0.293 0 -0.06" class="collision"/>
       <site name="imu" pos="-0.02557 0 0.04232"/>
@@ -181,7 +193,7 @@
             <geom size="0.011 0.0325" pos="0.02 0 -0.148" quat="0.999688 0 0.0249974 0" type="cylinder" class="collision"/>
             <geom pos="0 0 -0.213" mesh="foot" class="visual" material="pbr_plastic_black"/>
             <body name="FL_foot">
-              <geom name="FL" class="foot"/>
+            <geom name="FL" class="foot"/>
               <site name="FL_site" class="foot_site" />
             </body>
           </body>
@@ -211,7 +223,7 @@
             <geom size="0.011 0.0325" pos="0.02 0 -0.148" quat="0.999688 0 0.0249974 0" type="cylinder" class="collision"/>
             <geom pos="0 0 -0.213" mesh="foot" class="visual" material="pbr_plastic_black"/>
             <body name="FR_foot">
-              <geom name="FR" class="foot"/>
+            <geom name="FR" class="foot"/>
               <site name="FR_site" class="foot_site" />
             </body>
           </body>
@@ -241,7 +253,7 @@
             <geom size="0.011 0.0325" pos="0.02 0 -0.148" quat="0.999688 0 0.0249974 0" type="cylinder" class="collision"/>
             <geom pos="0 0 -0.213" mesh="foot" class="visual" material="pbr_plastic_black"/>
             <body name="RL_foot">
-              <geom name="RL" class="foot"/>
+            <geom name="RL" class="foot"/>
               <site name="RL_site" class="foot_site" />
             </body>
           </body>
@@ -271,7 +283,7 @@
             <geom size="0.011 0.0325" pos="0.02 0 -0.148" quat="0.999688 0 0.0249974 0" type="cylinder" class="collision"/>
             <geom pos="0 0 -0.213" mesh="foot" class="visual" material="pbr_plastic_black"/>
             <body name="RR_foot">
-              <geom name="RR" class="foot"/>
+            <geom name="RR" class="foot"/>
               <site name="RR_site" class="foot_site" />
             </body>
           </body>
@@ -294,39 +306,6 @@
     <motor class="hip" name="RR_thigh_actuator" joint="RR_thigh_joint"/>
     <motor class="knee" name="RR_calf_actuator" joint="RR_calf_joint"/>
   </actuator>
-
-<!-- 
-  <actuator>
-    <position name="FL_hip_actuator" joint="FL_hip_joint" class="go2" 
-              forcelimited="true" forcerange="-23.7 23.7"/>
-    <position name="FL_thigh_actuator" joint="FL_thigh_joint" class="go2" 
-              forcelimited="true" forcerange="-23.7 23.7"/>
-    <position name="FL_calf_actuator" joint="FL_calf_joint" class="go2"
-              forcelimited="true" forcerange="-45.43 45.43"/>
-
-    <position name="FR_hip_actuator" joint="FR_hip_joint" class="go2"
-              forcelimited="true" forcerange="-23.7 23.7"/>
-    <position name="FR_thigh_actuator" joint="FR_thigh_joint" class="go2"
-              forcelimited="true" forcerange="-23.7 23.7"/>
-    <position name="FR_calf_actuator" joint="FR_calf_joint" class="go2"
-              forcelimited="true" forcerange="-45.43 45.43"/>
-
-    <position name="RL_hip_actuator" joint="RL_hip_joint" class="go2"
-              forcelimited="true" forcerange="-23.7 23.7"/>
-    <position name="RL_thigh_actuator" joint="RL_thigh_joint" class="go2"
-              forcelimited="true" forcerange="-23.7 23.7"/>
-    <position name="RL_calf_actuator" joint="RL_calf_joint" class="go2"
-              forcelimited="true" forcerange="-45.43 45.43"/>
-
-    <position name="RR_hip_actuator" joint="RR_hip_joint" class="go2"
-              forcelimited="true" forcerange="-23.7 23.7"/>
-    <position name="RR_thigh_actuator" joint="RR_thigh_joint" class="go2"
-              forcelimited="true" forcerange="-23.7 23.7"/>
-    <position name="RR_calf_actuator" joint="RR_calf_joint" class="go2"
-              forcelimited="true" forcerange="-45.43 45.43"/>
-  </actuator> -->
-
-
   <sensor>
     <framequat name="imu_quat" objtype="site" objname="imu"/>
     <gyro name="imu_omega" site="imu" noise="5e-4" cutoff="34.9"/>
@@ -336,9 +315,4 @@
     <touch name="RL_touch" site="RL_site"/>
     <touch name="RR_touch" site="RR_site"/>
   </sensor>
-
-  <!-- <keyframe>
-    <key name="home" qpos="0 0 0.27 1 0 0 0 0 0.9 -1.8 0 0.9 -1.8 0 0.9 -1.8 0 0.9 -1.8"
-      ctrl="0 0.9 -1.8 0 0.9 -1.8 0 0.9 -1.8 0 0.9 -1.8"/>
-  </keyframe> -->
 </mujoco>
