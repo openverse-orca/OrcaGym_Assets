@@ -120,15 +120,15 @@
 
   <worldbody>
     <body name="command_indicator_mocap" pos="0 0 0" mocap="true">
-      <geom conaffinity="0" contype="0" pos="0.3 0 0" rgba="0.7 0 0 0.5" size="0.4 0.005 0.005" type="box" group="3"></geom>
-      <geom conaffinity="0" contype="0" pos="0 0.3 0" rgba="0 0.7 0 0.5" size="0.005 0.4 0.005" type="box" group="3"></geom>
-      <geom conaffinity="0" contype="0" pos="0 0 0.3" rgba="0 0 0.7 0.5" size="0.005 0.005 0.4" type="box" group="3"></geom>
+      <geom conaffinity="0" contype="0" pos="0.3 0 0" rgba="0.7 0 0 0.5" size="0.4 0.005 0.005" type="box" group="1"></geom>
+      <geom conaffinity="0" contype="0" pos="0 0.3 0" rgba="0 0.7 0 0.5" size="0.005 0.4 0.005" type="box" group="1"></geom>
+      <geom conaffinity="0" contype="0" pos="0 0 0.3" rgba="0 0 0.7 0.5" size="0.005 0.005 0.4" type="box" group="1"></geom>
     </body>
 
     <body name="torso" pos="0 0 0.5" childclass="Lite3">
       <freejoint name="torso" />
       <geom type="mesh" mesh="torso" material="pbr_plastic_white" class="visual"/>
-      <geom type="mesh" mesh="torso" class="collision"/>
+      <geom type="box" size="0.28 0.12 0.04" pos="0 0 0.025" class="collision"/>
       <inertial pos="0 0 0" mass="5.6056" diaginertia="0.02456 0.05518 0.07016"/>
       <site name="imu" pos="0 0 0" size="0.01"/>
 
@@ -140,11 +140,11 @@
           <geom type="mesh" mesh="fl_thigh" pos="0 0 0" class="visual" rgba="0.5 0.5 0.5 1" material="pbr_plastic_white"/>
           <inertial pos="-0.0052817 -0.014632 -0.042672" mass="0.86" diaginertia="0.005736 0.00496 0.001436"/>
           <joint name="FL_HipY_joint" pos="0 0 0" axis="0 -1 0" range="-2.67 0.314" actuatorfrcrange="-30 30"/>
-          <geom size="0.02 0.02 0.16" pos="0 0 -0.08" type="box" rgba="0.5 0.5 0.5 1" class="collision"/>
+          <geom size="0.03 0.02 0.12" pos="0 0 -0.08" euler="0 0.1 0" type="box" rgba="0.5 0.5 0.5 1" class="collision"/>
           <body name="FL_SHANK" pos="0 0 -0.2">
             <inertial pos="0.00573034 -1.28547e-06 -0.131807" quat="0.707101 0.00359881 0.00359725 0.707095" mass="0.173" diaginertia="0.00104615 0.00102919 3.19053e-05"/>
             <joint name="FL_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.524 2.792" actuatorfrcrange="-30 30"/>
-            <geom size="0.01 0.01 0.09" pos="0 0 -0.09" type="box" rgba="0.2 0.2 0.2 1"  class="collision"/>
+            <geom size="0.01 0.01 0.09" pos="0.01 0 -0.09" type="box" rgba="0.2 0.2 0.2 1"  class="collision"/>
             <geom type="mesh" mesh="fl_shank" pos="0 0 0" class="visual" rgba="0.2 0.2 0.2 1" material="pbr_metal_gray" />
             <body name="FL_FOOT" pos="0 0 -0.21012">
               <inertial pos="0 0 0" mass="0.02" diaginertia="0 0 0"/>
@@ -164,12 +164,12 @@
           <geom type="mesh" mesh="fr_thigh" pos="0 0 0" class="visual" rgba="0.5 0.5 0.5 1" material="pbr_plastic_white"/>
           <inertial pos="-0.0039245 0.025256 -0.025146" mass="0.86" diaginertia="0.005736 0.00496 0.001436"/>
           <joint name="FR_HipY_joint" pos="0 0 0" axis="0 -1 0" range="-2.67 0.314" actuatorfrcrange="-30 30"/>
-          <geom size="0.02 0.02 0.16" pos="0 0 -0.08" type="box" rgba="0.5 0.5 0.5 1" class="collision"/>
+          <geom size="0.03 0.02 0.12" pos="0 0 -0.08" euler="0 0.1 0" type="box" rgba="0.5 0.5 0.5 1" class="collision"/>
           <body name="FR_SHANK" pos="0 0 -0.2">
             <geom type="mesh" mesh="fr_shank" pos="0 0 0" class="visual" rgba="0.2 0.2 0.2 1"  material="pbr_metal_gray" />
             <inertial pos="0.00573034 -1.28697e-06 -0.131807" quat="0.707101 0.00359881 0.00359725 0.707095" mass="0.173" diaginertia="0.00104615 0.00102919 3.19053e-05"/>
             <joint name="FR_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.524 2.792" actuatorfrcrange="-30 30"/>       
-            <geom size="0.01 0.01 0.09" pos="0 0 -0.09" type="box" rgba="0.2 0.2 0.2 1" class="collision"/>
+            <geom size="0.01 0.01 0.09" pos="0.01 0 -0.09" type="box" rgba="0.2 0.2 0.2 1" class="collision"/>
             <body name="FR_FOOT" pos="0 0 -0.21012">
               <inertial pos="0 0 0" mass="0.02" diaginertia="0 0 0"/>
               <geom name="FR_FOOT" class="foot"/>
@@ -187,12 +187,12 @@
           <geom type="mesh" mesh="hl_thigh" pos="0 0 0" class="visual" rgba="0.5 0.5 0.5 1" material="pbr_plastic_white"/>
           <inertial pos="-0.0057137 -0.014631 -0.042453" mass="0.86" diaginertia="0.005736 0.00496 0.001436"/>
           <joint name="HL_HipY_joint" pos="0 0 0" axis="0 -1 0" range="-2.67 0.314" actuatorfrcrange="-30 30"/>
-          <geom size="0.02 0.02 0.16" pos="0 0 -0.08" type="box" rgba="0.5 0.5 0.5 1" class="collision"/>
+          <geom size="0.03 0.02 0.12" pos="0 0 -0.08" euler="0 0.1 0" type="box" rgba="0.5 0.5 0.5 1" class="collision"/>
           <body name="HL_SHANK" pos="0 0 -0.2">
             <geom type="mesh" mesh="hl_shank" pos="0 0 0" class="visual" rgba="0.2 0.2 0.2 1" material="pbr_metal_gray" />
             <inertial pos="0.00573034 -1.2875e-06 -0.131807" quat="0.707101 0.00359881 0.00359725 0.707095" mass="0.173" diaginertia="0.00104615 0.00102919 3.19053e-05"/>
             <joint name="HL_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.524 2.792" actuatorfrcrange="-30 30"/>
-            <geom size="0.01 0.01 0.09" pos="0 0 -0.09" type="box" rgba="0.2 0.2 0.2 1" class="collision"/>
+            <geom size="0.01 0.01 0.09" pos="0.01 0 -0.09" type="box" rgba="0.2 0.2 0.2 1" class="collision"/>
             <body name="HL_FOOT" pos="0 0 -0.21012">
               <inertial pos="0 0 0" mass="0.02" diaginertia="0 0 0"/>
               <geom name="HL_FOOT" class="foot"/>
@@ -210,12 +210,12 @@
           <geom type="mesh" mesh="hr_thigh" pos="0 0 0" class="visual" rgba="0.5 0.5 0.5 1" material="pbr_plastic_white"/>
           <inertial pos="-0.0031903 0.02526 -0.025617" mass="0.86" diaginertia="0.005736 0.00496 0.001436"/>
           <joint name="HR_HipY_joint" pos="0 0 0" axis="0 -1 0" range="-2.67 0.314" actuatorfrcrange="-30 30"/>
-          <geom size="0.02 0.02 0.16" pos="0 0 -0.08" type="box" rgba="0.5 0.5 0.5 1" class="collision"/>
+          <geom size="0.03 0.02 0.12" pos="0 0 -0.08" euler="0 0.1 0" type="box" rgba="0.5 0.5 0.5 1" class="collision"/>
           <body name="HR_SHANK" pos="0 0 -0.2">
             <geom type="mesh" mesh="hr_shank" pos="0 0 0" class="visual" rgba="0.2 0.2 0.2 1" material="pbr_metal_gray" />
             <inertial pos="0.00573034 -1.28493e-06 -0.131807" quat="0.707101 0.00359881 0.00359725 0.707095" mass="0.173" diaginertia="0.00104615 0.00102919 3.19053e-05"/>
             <joint name="HR_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.524 2.792" actuatorfrcrange="-30 30"/>
-            <geom size="0.01 0.01 0.09" pos="0 0 -0.09" type="box" rgba="0.2 0.2 0.2 1" class="collision"/>
+            <geom size="0.01 0.01 0.09" pos="0.01 0 -0.09" type="box" rgba="0.2 0.2 0.2 1" class="collision"/>
             <body name="HR_FOOT" pos="0 0 -0.21012">
               <inertial pos="0 0 0" mass="0.02" diaginertia="0 0 0"/>
               <geom name="HR_FOOT" class="foot"/>
