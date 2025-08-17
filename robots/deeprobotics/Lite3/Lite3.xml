@@ -135,15 +135,15 @@
       <body name="FL_HIP" pos="0.1745 0.062 0">
         <geom type="mesh" mesh="fl_hip" pos="0 0 0" class="visual" material="pbr_metal_gray"/>
         <inertial pos="-0.00601 -0.0066532 0.00034295" quat="0 0.707107 0 0.707107" mass="0.55" diaginertia="0.0004472 0.0004028 0.0003949"/>
-        <joint name="FL_HipX_joint" pos="0 0 0" axis="-1 0 0" range="-0.523 0.523" actuatorfrcrange="-30 30"/>
+        <joint name="FL_HipX_joint" pos="0 0 0" axis="-1 0 0" range="-0.523 0.523" actuatorfrcrange="-24 24"/>
         <body name="FL_THIGH" pos="0 0.09735 0">
           <geom type="mesh" mesh="fl_thigh" pos="0 0 0" class="visual" rgba="0.5 0.5 0.5 1" material="pbr_plastic_white"/>
           <inertial pos="-0.0052817 -0.014632 -0.042672" mass="0.86" diaginertia="0.005736 0.00496 0.001436"/>
-          <joint name="FL_HipY_joint" pos="0 0 0" axis="0 -1 0" range="-2.67 0.314" actuatorfrcrange="-30 30"/>
+          <joint name="FL_HipY_joint" pos="0 0 0" axis="0 -1 0" range="-2.67 0.314" actuatorfrcrange="-24 24"/>
           <geom size="0.03 0.02 0.12" pos="0 0 -0.08" euler="0 0.1 0" type="box" rgba="0.5 0.5 0.5 1" class="collision"/>
           <body name="FL_SHANK" pos="0 0 -0.2">
             <inertial pos="0.00573034 -1.28547e-06 -0.131807" quat="0.707101 0.00359881 0.00359725 0.707095" mass="0.173" diaginertia="0.00104615 0.00102919 3.19053e-05"/>
-            <joint name="FL_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.524 2.792" actuatorfrcrange="-30 30"/>
+            <joint name="FL_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.524 2.792" actuatorfrcrange="-36 36"/>
             <geom size="0.01 0.01 0.09" pos="0.01 0 -0.09" type="box" rgba="0.2 0.2 0.2 1"  class="collision"/>
             <geom type="mesh" mesh="fl_shank" pos="0 0 0" class="visual" rgba="0.2 0.2 0.2 1" material="pbr_metal_gray" />
             <body name="FL_FOOT" pos="0 0 -0.21012">
@@ -159,16 +159,16 @@
       
         <geom type="mesh" mesh="fr_hip" pos="0 0 0" class="visual" material="pbr_metal_gray"/>
         <inertial pos="-0.010579 0.011358 0.00048546" mass="0.55" diaginertia="0.0004472 0.0004028 0.0003949"/>
-        <joint name="FR_HipX_joint" pos="0 0 0" axis="-1 0 0" range="-0.523 0.523" actuatorfrcrange="-30 30"/>
+        <joint name="FR_HipX_joint" pos="0 0 0" axis="-1 0 0" range="-0.523 0.523" actuatorfrcrange="-24 24"/>
         <body name="FR_THIGH" pos="0 -0.09735 0">
           <geom type="mesh" mesh="fr_thigh" pos="0 0 0" class="visual" rgba="0.5 0.5 0.5 1" material="pbr_plastic_white"/>
           <inertial pos="-0.0039245 0.025256 -0.025146" mass="0.86" diaginertia="0.005736 0.00496 0.001436"/>
-          <joint name="FR_HipY_joint" pos="0 0 0" axis="0 -1 0" range="-2.67 0.314" actuatorfrcrange="-30 30"/>
+          <joint name="FR_HipY_joint" pos="0 0 0" axis="0 -1 0" range="-2.67 0.314" actuatorfrcrange="-24 24"/>
           <geom size="0.03 0.02 0.12" pos="0 0 -0.08" euler="0 0.1 0" type="box" rgba="0.5 0.5 0.5 1" class="collision"/>
           <body name="FR_SHANK" pos="0 0 -0.2">
             <geom type="mesh" mesh="fr_shank" pos="0 0 0" class="visual" rgba="0.2 0.2 0.2 1"  material="pbr_metal_gray" />
             <inertial pos="0.00573034 -1.28697e-06 -0.131807" quat="0.707101 0.00359881 0.00359725 0.707095" mass="0.173" diaginertia="0.00104615 0.00102919 3.19053e-05"/>
-            <joint name="FR_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.524 2.792" actuatorfrcrange="-30 30"/>       
+            <joint name="FR_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.524 2.792" actuatorfrcrange="-36 36"/>       
             <geom size="0.01 0.01 0.09" pos="0.01 0 -0.09" type="box" rgba="0.2 0.2 0.2 1" class="collision"/>
             <body name="FR_FOOT" pos="0 0 -0.21012">
               <inertial pos="0 0 0" mass="0.02" diaginertia="0 0 0"/>
@@ -182,16 +182,16 @@
       <body name="HL_HIP" pos="-0.1745 0.062 0">
         <geom type="mesh" mesh="hl_hip" pos="0 0 0" class="visual" material="pbr_metal_gray"/>
         <inertial pos="0.010905 -0.012636 0.001051" quat="0 0.707107 0 0.707107" mass="0.55" diaginertia="0.0004472 0.0004028 0.0003949"/>
-        <joint name="HL_HipX_joint" pos="0 0 0" axis="-1 0 0" range="-0.523 0.523" actuatorfrcrange="-30 30"/>
+        <joint name="HL_HipX_joint" pos="0 0 0" axis="-1 0 0" range="-0.523 0.523" actuatorfrcrange="-24 24"/>
         <body name="HL_THIGH" pos="0 0.09735 0">
           <geom type="mesh" mesh="hl_thigh" pos="0 0 0" class="visual" rgba="0.5 0.5 0.5 1" material="pbr_plastic_white"/>
           <inertial pos="-0.0057137 -0.014631 -0.042453" mass="0.86" diaginertia="0.005736 0.00496 0.001436"/>
-          <joint name="HL_HipY_joint" pos="0 0 0" axis="0 -1 0" range="-2.67 0.314" actuatorfrcrange="-30 30"/>
+          <joint name="HL_HipY_joint" pos="0 0 0" axis="0 -1 0" range="-2.67 0.314" actuatorfrcrange="-24 24"/>
           <geom size="0.03 0.02 0.12" pos="0 0 -0.08" euler="0 0.1 0" type="box" rgba="0.5 0.5 0.5 1" class="collision"/>
           <body name="HL_SHANK" pos="0 0 -0.2">
             <geom type="mesh" mesh="hl_shank" pos="0 0 0" class="visual" rgba="0.2 0.2 0.2 1" material="pbr_metal_gray" />
             <inertial pos="0.00573034 -1.2875e-06 -0.131807" quat="0.707101 0.00359881 0.00359725 0.707095" mass="0.173" diaginertia="0.00104615 0.00102919 3.19053e-05"/>
-            <joint name="HL_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.524 2.792" actuatorfrcrange="-30 30"/>
+            <joint name="HL_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.524 2.792" actuatorfrcrange="-36 36"/>
             <geom size="0.01 0.01 0.09" pos="0.01 0 -0.09" type="box" rgba="0.2 0.2 0.2 1" class="collision"/>
             <body name="HL_FOOT" pos="0 0 -0.21012">
               <inertial pos="0 0 0" mass="0.02" diaginertia="0 0 0"/>
@@ -205,16 +205,16 @@
       <body name="HR_HIP" pos="-0.1745 -0.062 0">
         <geom type="mesh" mesh="hr_hip" pos="0 0 0" class="visual" material="pbr_metal_gray"/>
         <inertial pos="0.010354 0.011423 0.00049498" quat="0 0.707107 0 0.707107" mass="0.55" diaginertia="0.0004472 0.0004028 0.0003949"/>
-        <joint name="HR_HipX_joint" pos="0 0 0" axis="-1 0 0" range="-0.523 0.523" actuatorfrcrange="-30 30"/>
+        <joint name="HR_HipX_joint" pos="0 0 0" axis="-1 0 0" range="-0.523 0.523" actuatorfrcrange="-24 24"/>
         <body name="HR_THIGH" pos="0 -0.09735 0">
           <geom type="mesh" mesh="hr_thigh" pos="0 0 0" class="visual" rgba="0.5 0.5 0.5 1" material="pbr_plastic_white"/>
           <inertial pos="-0.0031903 0.02526 -0.025617" mass="0.86" diaginertia="0.005736 0.00496 0.001436"/>
-          <joint name="HR_HipY_joint" pos="0 0 0" axis="0 -1 0" range="-2.67 0.314" actuatorfrcrange="-30 30"/>
+          <joint name="HR_HipY_joint" pos="0 0 0" axis="0 -1 0" range="-2.67 0.314" actuatorfrcrange="-24 24"/>
           <geom size="0.03 0.02 0.12" pos="0 0 -0.08" euler="0 0.1 0" type="box" rgba="0.5 0.5 0.5 1" class="collision"/>
           <body name="HR_SHANK" pos="0 0 -0.2">
             <geom type="mesh" mesh="hr_shank" pos="0 0 0" class="visual" rgba="0.2 0.2 0.2 1" material="pbr_metal_gray" />
             <inertial pos="0.00573034 -1.28493e-06 -0.131807" quat="0.707101 0.00359881 0.00359725 0.707095" mass="0.173" diaginertia="0.00104615 0.00102919 3.19053e-05"/>
-            <joint name="HR_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.524 2.792" actuatorfrcrange="-30 30"/>
+            <joint name="HR_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.524 2.792" actuatorfrcrange="-36 36"/>
             <geom size="0.01 0.01 0.09" pos="0.01 0 -0.09" type="box" rgba="0.2 0.2 0.2 1" class="collision"/>
             <body name="HR_FOOT" pos="0 0 -0.21012">
               <inertial pos="0 0 0" mass="0.02" diaginertia="0 0 0"/>
@@ -229,24 +229,24 @@
 
   <actuator>
     <!-- Front Left Leg -->
-    <motor joint="FL_HipX_joint" name="FL_HipX_actuator" ctrlrange="-30 30"/>
-    <motor joint="FL_HipY_joint" name="FL_HipY_actuator" ctrlrange="-30 30"/>
-    <motor joint="FL_Knee_joint" name="FL_Knee_actuator" ctrlrange="-30 30"/>
+    <motor joint="FL_HipX_joint" name="FL_HipX_actuator" ctrlrange="-24 24"/>
+    <motor joint="FL_HipY_joint" name="FL_HipY_actuator" ctrlrange="-24 24"/>
+    <motor joint="FL_Knee_joint" name="FL_Knee_actuator" ctrlrange="-36 36"/>
     
     <!-- Front Right Leg -->
-    <motor joint="FR_HipX_joint" name="FR_HipX_actuator" ctrlrange="-30 30"/>
-    <motor joint="FR_HipY_joint" name="FR_HipY_actuator" ctrlrange="-30 30"/>
-    <motor joint="FR_Knee_joint" name="FR_Knee_actuator" ctrlrange="-30 30"/>
+    <motor joint="FR_HipX_joint" name="FR_HipX_actuator" ctrlrange="-24 24"/>
+    <motor joint="FR_HipY_joint" name="FR_HipY_actuator" ctrlrange="-24 24"/>
+    <motor joint="FR_Knee_joint" name="FR_Knee_actuator" ctrlrange="-36 36"/>
     
     <!-- Hind Left Leg -->
-    <motor joint="HL_HipX_joint" name="HL_HipX_actuator" ctrlrange="-30 30"/>
-    <motor joint="HL_HipY_joint" name="HL_HipY_actuator" ctrlrange="-30 30"/>
-    <motor joint="HL_Knee_joint" name="HL_Knee_actuator" ctrlrange="-30 30"/>
+    <motor joint="HL_HipX_joint" name="HL_HipX_actuator" ctrlrange="-24 24"/>
+    <motor joint="HL_HipY_joint" name="HL_HipY_actuator" ctrlrange="-24 24"/>
+    <motor joint="HL_Knee_joint" name="HL_Knee_actuator" ctrlrange="-36 36"/>
     
     <!-- Hind Right Leg -->
-    <motor joint="HR_HipX_joint" name="HR_HipX_actuator" ctrlrange="-30 30"/>
-    <motor joint="HR_HipY_joint" name="HR_HipY_actuator" ctrlrange="-30 30"/>
-    <motor joint="HR_Knee_joint" name="HR_Knee_actuator" ctrlrange="-30 30"/>
+    <motor joint="HR_HipX_joint" name="HR_HipX_actuator" ctrlrange="-24 24"/>
+    <motor joint="HR_HipY_joint" name="HR_HipY_actuator" ctrlrange="-24 24"/>
+    <motor joint="HR_Knee_joint" name="HR_Knee_actuator" ctrlrange="-36 36"/>
   </actuator>
 
   <sensor>
