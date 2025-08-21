@@ -3,7 +3,7 @@
 
   <default>
     <default class="Lite3">
-      <joint damping="0.01" frictionloss="0.1"/>
+      <joint damping="0.05" frictionloss="0.1"/>
     </default>
     <default class="visual">
       <geom type="mesh" contype="0" conaffinity="0"/>
@@ -20,7 +20,7 @@
         <!-- 接触响应优化（尺寸增大后微调） -->
         <!-- 接触特性：匹配更大球体 -->
         <!-- 防穿透容差增加 -->
-        <geom type="sphere" size="0.025"       
+        <geom type="sphere" size="0.033"       
               friction="1.0 0.45 0.35"                      
               solref="0.02 1.2"   
               solimp="0.9 0.5 0.01"              
