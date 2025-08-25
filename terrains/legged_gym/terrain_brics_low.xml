@@ -46,6 +46,15 @@
                 <geom type="box" pos="6.0 -8.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
                 <geom type="box" pos="8.0 -8.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>
 
+                <geom type="box" pos="-7.0 -7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-5.0 -7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="-3.0 -7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-1.0 -7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="1.0 -7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="3.0 -7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="5.0 -7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="7.0 -7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+
                 <geom type="box" pos="-8.0 -6.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
                 <geom type="box" pos="-6.0 -6.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>             
                 <geom type="box" pos="-4.0 -6.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
@@ -55,6 +64,15 @@
                 <geom type="box" pos="4.0 -6.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
                 <geom type="box" pos="6.0 -6.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>
                 <geom type="box" pos="8.0 -6.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>
+
+                <geom type="box" pos="-7.0 -5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-5.0 -5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="-3.0 -5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-1.0 -5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="1.0 -5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="3.0 -5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="5.0 -5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="7.0 -5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
 
                 <geom type="box" pos="-8.0 -4.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
                 <geom type="box" pos="-6.0 -4.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>             
@@ -66,6 +84,15 @@
                 <geom type="box" pos="6.0 -4.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>
                 <geom type="box" pos="8.0 -4.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>
 
+                <geom type="box" pos="-7.0 -3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-5.0 -3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="-3.0 -3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-1.0 -3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="1.0 -3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="3.0 -3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="5.0 -3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="7.0 -3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+
                 <geom type="box" pos="-8.0 -2.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
                 <geom type="box" pos="-6.0 -2.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>             
                 <geom type="box" pos="-4.0 -2.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
@@ -75,6 +102,15 @@
                 <geom type="box" pos="4.0 -2.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
                 <geom type="box" pos="6.0 -2.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>
                 <geom type="box" pos="8.0 -2.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>
+
+                <geom type="box" pos="-7.0 -1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-5.0 -1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="-3.0 -1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-1.0 -1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="1.0 -1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="3.0 -1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="5.0 -1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="7.0 -1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
 
                 <geom type="box" pos="-8.0 0.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
                 <geom type="box" pos="-6.0 0.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>             
@@ -86,6 +122,15 @@
                 <geom type="box" pos="6.0 0.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>
                 <geom type="box" pos="8.0 0.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>
 
+                <geom type="box" pos="-7.0 1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-5.0 1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="-3.0 1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-1.0 1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="1.0 1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="3.0 1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="5.0 1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="7.0 1.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+
                 <geom type="box" pos="-8.0 2.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
                 <geom type="box" pos="-6.0 2.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>             
                 <geom type="box" pos="-4.0 2.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
@@ -95,6 +140,15 @@
                 <geom type="box" pos="4.0 2.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
                 <geom type="box" pos="6.0 2.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>
                 <geom type="box" pos="8.0 2.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>
+
+                <geom type="box" pos="-7.0 3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-5.0 3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="-3.0 3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-1.0 3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="1.0 3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="3.0 3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="5.0 3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="7.0 3.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
                 
                 <geom type="box" pos="-8.0 4.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
                 <geom type="box" pos="-6.0 4.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>             
@@ -106,6 +160,15 @@
                 <geom type="box" pos="6.0 4.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>
                 <geom type="box" pos="8.0 4.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>
 
+                <geom type="box" pos="-7.0 5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-5.0 5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="-3.0 5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-1.0 5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="1.0 5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="3.0 5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="5.0 5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="7.0 5.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+
                 <geom type="box" pos="-8.0 6.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
                 <geom type="box" pos="-6.0 6.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>             
                 <geom type="box" pos="-4.0 6.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
@@ -115,6 +178,15 @@
                 <geom type="box" pos="4.0 6.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
                 <geom type="box" pos="6.0 6.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>
                 <geom type="box" pos="8.0 6.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>
+
+                <geom type="box" pos="-7.0 7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-5.0 7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="-3.0 7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="-1.0 7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="1.0 7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="3.0 7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
+                <geom type="box" pos="5.0 7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>     
+                <geom type="box" pos="7.0 7.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>             
 
                 <geom type="box" pos="-8.0 8.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_white"/>     
                 <geom type="box" pos="-6.0 8.0 -1.0" size="0.5 0.5 1.025"   material="pbr_plastic_gray"/>             

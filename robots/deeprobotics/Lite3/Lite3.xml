@@ -20,16 +20,15 @@
         <!-- 接触响应优化（尺寸增大后微调） -->
         <!-- 接触特性：匹配更大球体 -->
         <!-- 防穿透容差增加 -->
-        <geom type="sphere" size="0.03"       
+        <geom type="sphere" size="0.025"       
               friction="0.8 0.02 0.01"                      
-              solref="0.02 1.2"   
               solimp="0.015 1 0.022"              
               condim="6"      
-              priority="1"/>                   
+              priority="2"/>                   
       </default>
     </default>
     <default class="foot_site">
-      <site size="0.05" group="3"/>
+      <site size="0.035" group="3"/>
     </default>
   </default>
 
