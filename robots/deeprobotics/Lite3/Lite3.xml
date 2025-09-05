@@ -3,7 +3,7 @@
 
   <default>
     <default class="Lite3">
-      <joint damping="0.05" frictionloss="0.1"/>
+      <joint damping="0.001" frictionloss="0.1"/>
     </default>
     <default class="visual">
       <geom type="mesh" contype="0" conaffinity="0"/>
