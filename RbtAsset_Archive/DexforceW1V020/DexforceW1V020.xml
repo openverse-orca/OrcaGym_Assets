@@ -1,0 +1,397 @@
+<mujoco model="DexforceW1V020">
+  <compiler angle="radian" meshdir="Meshes/" texturedir="textures/" balanceinertia="true"/>
+  <asset>
+    <mesh name="base_link" content_type="model/obj" file="base_link.obj"/>
+    <mesh name="base_link_base_link_mesh_0" content_type="model/obj" file="base_link_base_link_mesh_0.obj"/>
+    <mesh name="torso1" content_type="model/obj" file="torso1.obj"/>
+    <mesh name="torso1_body1_002_mesh_0" content_type="model/obj" file="torso1_body1_002_mesh_0.obj"/>
+    <mesh name="torso2" content_type="model/obj" file="torso2.obj"/>
+    <mesh name="torso2_body2_001_mesh_0" content_type="model/obj" file="torso2_body2_001_mesh_0.obj"/>
+    <mesh name="torso3" content_type="model/obj" file="torso3.obj"/>
+    <mesh name="torso3_body3_002_mesh_0" content_type="model/obj" file="torso3_body3_002_mesh_0.obj"/>
+    <mesh name="torso4" content_type="model/obj" file="torso4.obj"/>
+    <mesh name="torso4_body4_006_mesh_0" content_type="model/obj" file="torso4_body4_006_mesh_0.obj"/>
+    <mesh name="torso4_body4_button_005_mesh_1" content_type="model/obj" file="torso4_body4_button_005_mesh_1.obj"/>
+    <mesh name="head1" content_type="model/obj" file="head1.obj"/>
+    <mesh name="head1_head1_002_mesh_0" content_type="model/obj" file="head1_head1_002_mesh_0.obj"/>
+    <mesh name="head2" content_type="model/obj" file="head2.obj"/>
+    <mesh name="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_0" content_type="model/obj" file="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_0.obj"/>
+    <mesh name="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_1_1" content_type="model/obj" file="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_1_1.obj"/>
+    <mesh name="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_2_2" content_type="model/obj" file="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_2_2.obj"/>
+    <mesh name="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_3_3" content_type="model/obj" file="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_3_3.obj"/>
+    <mesh name="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_4_4" content_type="model/obj" file="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_4_4.obj"/>
+    <mesh name="arml1" content_type="model/obj" file="arml1.obj"/>
+    <mesh name="arml1_arml1_001_mesh_0" content_type="model/obj" file="arml1_arml1_001_mesh_0.obj"/>
+    <mesh name="arml2" content_type="model/obj" file="arml2.obj"/>
+    <mesh name="arml2_arml2_004_mesh_0" content_type="model/obj" file="arml2_arml2_004_mesh_0.obj"/>
+    <mesh name="arml3" content_type="model/obj" file="arml3.obj"/>
+    <mesh name="arml3_arml3_003_mesh_0" content_type="model/obj" file="arml3_arml3_003_mesh_0.obj"/>
+    <mesh name="arml4" content_type="model/obj" file="arml4.obj"/>
+    <mesh name="arml4_arml4_002_mesh_0" content_type="model/obj" file="arml4_arml4_002_mesh_0.obj"/>
+    <mesh name="arml5" content_type="model/obj" file="arml5.obj"/>
+    <mesh name="arml5_arml5_001_mesh_0" content_type="model/obj" file="arml5_arml5_001_mesh_0.obj"/>
+    <mesh name="arml6" content_type="model/obj" file="arml6.obj"/>
+    <mesh name="arml6_arml6_001_mesh_0" content_type="model/obj" file="arml6_arml6_001_mesh_0.obj"/>
+    <mesh name="arml7" content_type="model/obj" file="arml7.obj"/>
+    <mesh name="arml7_arml7_005_mesh_0" content_type="model/obj" file="arml7_arml7_005_mesh_0.obj"/>
+    <mesh name="armr1" content_type="model/obj" file="armr1.obj"/>
+    <mesh name="armr1_arml1_002_mesh_0" content_type="model/obj" file="armr1_arml1_002_mesh_0.obj"/>
+    <mesh name="armr2" content_type="model/obj" file="armr2.obj"/>
+    <mesh name="armr2_arml2_005_mesh_0" content_type="model/obj" file="armr2_arml2_005_mesh_0.obj"/>
+    <mesh name="armr3" content_type="model/obj" file="armr3.obj"/>
+    <mesh name="armr3_arml3_005_mesh_0" content_type="model/obj" file="armr3_arml3_005_mesh_0.obj"/>
+    <mesh name="armr4" content_type="model/obj" file="armr4.obj"/>
+    <mesh name="armr4_arml4_mesh_0" content_type="model/obj" file="armr4_arml4_mesh_0.obj"/>
+    <mesh name="armr5" content_type="model/obj" file="armr5.obj"/>
+    <mesh name="armr5_arml5_mesh_0" content_type="model/obj" file="armr5_arml5_mesh_0.obj"/>
+    <mesh name="armr6" content_type="model/obj" file="armr6.obj"/>
+    <mesh name="armr6_armr6_mesh_0" content_type="model/obj" file="armr6_armr6_mesh_0.obj"/>
+    <mesh name="armr7" content_type="model/obj" file="armr7.obj"/>
+    <mesh name="armr7_arml7_006_mesh_0" content_type="model/obj" file="armr7_arml7_006_mesh_0.obj"/>
+    <mesh name="L_base_link" content_type="model/obj" file="L_base_link.obj"/>
+    <mesh name="L_base_link_right_hand_base_2_mesh_0" content_type="model/obj" file="L_base_link_right_hand_base_2_mesh_0.obj"/>
+    <mesh name="L_base_link_right_hand_base_2_mesh_1_1" content_type="model/obj" file="L_base_link_right_hand_base_2_mesh_1_1.obj"/>
+    <mesh name="L_thumb_prox" content_type="model/obj" file="L_thumb_prox.obj"/>
+    <mesh name="L_thumb_prox_L_thumb_prox_mesh_0" content_type="model/obj" file="L_thumb_prox_L_thumb_prox_mesh_0.obj"/>
+    <mesh name="L_thumb_dist" content_type="model/obj" file="L_thumb_dist.obj"/>
+    <mesh name="L_thumb_dist_L_thumb_dist_mesh_0" content_type="model/obj" file="L_thumb_dist_L_thumb_dist_mesh_0.obj"/>
+    <mesh name="L_index_prox" content_type="model/obj" file="L_index_prox.obj"/>
+    <mesh name="L_index_prox_L_index_prox_mesh_0" content_type="model/obj" file="L_index_prox_L_index_prox_mesh_0.obj"/>
+    <mesh name="L_index_dist" content_type="model/obj" file="L_index_dist.obj"/>
+    <mesh name="L_index_dist_L_index_dist_mesh_0" content_type="model/obj" file="L_index_dist_L_index_dist_mesh_0.obj"/>
+    <mesh name="L_middle_prox" content_type="model/obj" file="L_middle_prox.obj"/>
+    <mesh name="L_middle_prox_L_middle_prox_mesh_0" content_type="model/obj" file="L_middle_prox_L_middle_prox_mesh_0.obj"/>
+    <mesh name="L_middle_dist" content_type="model/obj" file="L_middle_dist.obj"/>
+    <mesh name="L_middle_dist_L_middle_dist_mesh_0" content_type="model/obj" file="L_middle_dist_L_middle_dist_mesh_0.obj"/>
+    <mesh name="L_ring_prox" content_type="model/obj" file="L_ring_prox.obj"/>
+    <mesh name="L_ring_prox_L_ring_prox_mesh_0" content_type="model/obj" file="L_ring_prox_L_ring_prox_mesh_0.obj"/>
+    <mesh name="L_ring_dist" content_type="model/obj" file="L_ring_dist.obj"/>
+    <mesh name="L_ring_dist_L_ring_dist_mesh_0" content_type="model/obj" file="L_ring_dist_L_ring_dist_mesh_0.obj"/>
+    <mesh name="L_little_prox" content_type="model/obj" file="L_little_prox.obj"/>
+    <mesh name="L_little_prox_L_little_prox_mesh_0" content_type="model/obj" file="L_little_prox_L_little_prox_mesh_0.obj"/>
+    <mesh name="L_little_dist" content_type="model/obj" file="L_little_dist.obj"/>
+    <mesh name="L_little_dist_L_little_dist_mesh_0" content_type="model/obj" file="L_little_dist_L_little_dist_mesh_0.obj"/>
+    <mesh name="R_base_link" content_type="model/obj" file="R_base_link.obj"/>
+    <mesh name="R_base_link_right_hand_base_2_mesh_0" content_type="model/obj" file="R_base_link_right_hand_base_2_mesh_0.obj"/>
+    <mesh name="R_base_link_right_hand_base_2_mesh_1_1" content_type="model/obj" file="R_base_link_right_hand_base_2_mesh_1_1.obj"/>
+    <mesh name="R_thumb_prox" content_type="model/obj" file="R_thumb_prox.obj"/>
+    <mesh name="R_thumb_prox_R_thumb_prox_mesh_0" content_type="model/obj" file="R_thumb_prox_R_thumb_prox_mesh_0.obj"/>
+    <mesh name="R_thumb_dist" content_type="model/obj" file="R_thumb_dist.obj"/>
+    <mesh name="R_thumb_dist_R_thumb_dist_mesh_0" content_type="model/obj" file="R_thumb_dist_R_thumb_dist_mesh_0.obj"/>
+    <mesh name="R_index_prox" content_type="model/obj" file="R_index_prox.obj"/>
+    <mesh name="R_index_prox_R_index_prox_mesh_0" content_type="model/obj" file="R_index_prox_R_index_prox_mesh_0.obj"/>
+    <mesh name="R_index_dist" content_type="model/obj" file="R_index_dist.obj"/>
+    <mesh name="R_index_dist_R_index_dist_mesh_0" content_type="model/obj" file="R_index_dist_R_index_dist_mesh_0.obj"/>
+    <mesh name="R_middle_prox" content_type="model/obj" file="R_middle_prox.obj"/>
+    <mesh name="R_middle_prox_R_middle_prox_mesh_0" content_type="model/obj" file="R_middle_prox_R_middle_prox_mesh_0.obj"/>
+    <mesh name="R_middle_dist" content_type="model/obj" file="R_middle_dist.obj"/>
+    <mesh name="R_middle_dist_R_middle_dist_mesh_0" content_type="model/obj" file="R_middle_dist_R_middle_dist_mesh_0.obj"/>
+    <mesh name="R_ring_prox" content_type="model/obj" file="R_ring_prox.obj"/>
+    <mesh name="R_ring_prox_R_ring_prox_mesh_0" content_type="model/obj" file="R_ring_prox_R_ring_prox_mesh_0.obj"/>
+    <mesh name="R_ring_dist" content_type="model/obj" file="R_ring_dist.obj"/>
+    <mesh name="R_ring_dist_R_ring_dist_mesh_0" content_type="model/obj" file="R_ring_dist_R_ring_dist_mesh_0.obj"/>
+    <mesh name="R_little_prox" content_type="model/obj" file="R_little_prox.obj"/>
+    <mesh name="R_little_prox_R_little_prox_mesh_0" content_type="model/obj" file="R_little_prox_R_little_prox_mesh_0.obj"/>
+    <mesh name="R_little_dist" content_type="model/obj" file="R_little_dist.obj"/>
+    <mesh name="R_little_dist_R_little_dist_mesh_0" content_type="model/obj" file="R_little_dist_R_little_dist_mesh_0.obj"/>
+    <texture name="base_link_base_link_mesh_0.png" type="2d" file="base_link_base_link_mesh_0.png"/>
+    <material name="base_link_base_link_mesh_0.png" texture="base_link_base_link_mesh_0.png"/>
+    <texture name="torso1_body1_002_mesh_0.png" type="2d" file="torso1_body1_002_mesh_0.png"/>
+    <material name="torso1_body1_002_mesh_0.png" texture="torso1_body1_002_mesh_0.png"/>
+    <texture name="torso2_body2_001_mesh_0.png" type="2d" file="torso2_body2_001_mesh_0.png"/>
+    <material name="torso2_body2_001_mesh_0.png" texture="torso2_body2_001_mesh_0.png"/>
+    <texture name="torso3_body3_002_mesh_0.png" type="2d" file="torso3_body3_002_mesh_0.png"/>
+    <material name="torso3_body3_002_mesh_0.png" texture="torso3_body3_002_mesh_0.png"/>
+    <texture name="torso4_body4_006_mesh_0.png" type="2d" file="torso4_body4_006_mesh_0.png"/>
+    <material name="torso4_body4_006_mesh_0.png" texture="torso4_body4_006_mesh_0.png"/>
+    <texture name="torso4_body4_button_005_mesh_1.png" type="2d" file="torso4_body4_button_005_mesh_1.png"/>
+    <material name="torso4_body4_button_005_mesh_1.png" texture="torso4_body4_button_005_mesh_1.png"/>
+    <texture name="head1_head1_002_mesh_0.png" type="2d" file="head1_head1_002_mesh_0.png"/>
+    <material name="head1_head1_002_mesh_0.png" texture="head1_head1_002_mesh_0.png"/>
+    <texture name="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_1_1.png" type="2d" file="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_1_1.png"/>
+    <material name="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_1_1.png" texture="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_1_1.png"/>
+    <texture name="arml1_arml1_001_mesh_0.png" type="2d" file="arml1_arml1_001_mesh_0.png"/>
+    <material name="arml1_arml1_001_mesh_0.png" texture="arml1_arml1_001_mesh_0.png"/>
+    <texture name="arml2_arml2_004_mesh_0.png" type="2d" file="arml2_arml2_004_mesh_0.png"/>
+    <material name="arml2_arml2_004_mesh_0.png" texture="arml2_arml2_004_mesh_0.png"/>
+    <texture name="arml3_arml3_003_mesh_0.png" type="2d" file="arml3_arml3_003_mesh_0.png"/>
+    <material name="arml3_arml3_003_mesh_0.png" texture="arml3_arml3_003_mesh_0.png"/>
+    <texture name="arml4_arml4_002_mesh_0.png" type="2d" file="arml4_arml4_002_mesh_0.png"/>
+    <material name="arml4_arml4_002_mesh_0.png" texture="arml4_arml4_002_mesh_0.png"/>
+    <texture name="arml5_arml5_001_mesh_0.png" type="2d" file="arml5_arml5_001_mesh_0.png"/>
+    <material name="arml5_arml5_001_mesh_0.png" texture="arml5_arml5_001_mesh_0.png"/>
+    <texture name="arml6_arml6_001_mesh_0.png" type="2d" file="arml6_arml6_001_mesh_0.png"/>
+    <material name="arml6_arml6_001_mesh_0.png" texture="arml6_arml6_001_mesh_0.png"/>
+    <texture name="arml7_arml7_005_mesh_0.png" type="2d" file="arml7_arml7_005_mesh_0.png"/>
+    <material name="arml7_arml7_005_mesh_0.png" texture="arml7_arml7_005_mesh_0.png"/>
+    <texture name="armr1_arml1_002_mesh_0.png" type="2d" file="armr1_arml1_002_mesh_0.png"/>
+    <material name="armr1_arml1_002_mesh_0.png" texture="armr1_arml1_002_mesh_0.png"/>
+    <texture name="armr2_arml2_005_mesh_0.png" type="2d" file="armr2_arml2_005_mesh_0.png"/>
+    <material name="armr2_arml2_005_mesh_0.png" texture="armr2_arml2_005_mesh_0.png"/>
+    <texture name="armr3_arml3_005_mesh_0.png" type="2d" file="armr3_arml3_005_mesh_0.png"/>
+    <material name="armr3_arml3_005_mesh_0.png" texture="armr3_arml3_005_mesh_0.png"/>
+    <texture name="armr4_arml4_mesh_0.png" type="2d" file="armr4_arml4_mesh_0.png"/>
+    <material name="armr4_arml4_mesh_0.png" texture="armr4_arml4_mesh_0.png"/>
+    <texture name="armr5_arml5_mesh_0.png" type="2d" file="armr5_arml5_mesh_0.png"/>
+    <material name="armr5_arml5_mesh_0.png" texture="armr5_arml5_mesh_0.png"/>
+    <texture name="armr6_armr6_mesh_0.png" type="2d" file="armr6_armr6_mesh_0.png"/>
+    <material name="armr6_armr6_mesh_0.png" texture="armr6_armr6_mesh_0.png"/>
+    <texture name="armr7_arml7_006_mesh_0.png" type="2d" file="armr7_arml7_006_mesh_0.png"/>
+    <material name="armr7_arml7_006_mesh_0.png" texture="armr7_arml7_006_mesh_0.png"/>
+  </asset>
+  <worldbody>
+    <geom type="mesh" mesh="base_link" group="3" name="default_geom0"/>
+    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="base_link_base_link_mesh_0" material="base_link_base_link_mesh_0.png" name="default_geom1"/>
+    <body name="ankle" pos="0 0 0.292" quat="0.707107 0.707107 0 0">
+      <inertial pos="0.0803724 -8.24203e-06 0.0208069" quat="0.468368 0.525664 0.567043 0.427517" mass="6.27173" diaginertia="0.0698166 0.0698166 0.0698166"/>
+      <joint name="ANKLE" pos="0 0 0" axis="0 0 -1" range="-1.5708 1.5708" actuatorfrcrange="-100 100"/>
+      <geom type="mesh" mesh="torso1" group="3" name="default_geom2"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="torso1_body1_002_mesh_0" material="torso1_body1_002_mesh_0.png" name="default_geom3"/>
+      <body name="knee" pos="0 0.34 0">
+        <inertial pos="0.0741447 3.56418e-05 0.00574815" quat="0.503636 0.465532 0.555798 0.469808" mass="5.77321" diaginertia="0.0527012 0.0527012 0.0527012"/>
+        <joint name="KNEE" pos="0 0 0" axis="0 0 -1" range="-2.70526 2.70526" actuatorfrcrange="-100 100"/>
+        <geom type="mesh" mesh="torso2" group="3" name="default_geom4"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="torso2_body2_001_mesh_0" material="torso2_body2_001_mesh_0.png" name="default_geom5"/>
+        <body name="buttock" pos="0 0.34 0">
+          <inertial pos="0.0524908 1.26357e-05 0.00924465" quat="0.44197 0.5521 0.551553 0.44231" mass="7.40728" diaginertia="0.0412925 0.0362163 0.0192512"/>
+          <joint name="BUTTOCK" pos="0 0 0" axis="0 0 -1" range="-1.91986 1.5708" actuatorfrcrange="-100 100"/>
+          <geom type="mesh" mesh="torso3" group="3" name="default_geom6"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="torso3_body3_002_mesh_0" material="torso3_body3_002_mesh_0.png" name="default_geom7"/>
+          <body name="waist" pos="0 0.1578 0" quat="0.707107 -0.707107 0 0">
+            <inertial pos="0.00640168 0.000481888 0.200117" quat="0.99589 -0.0894354 -0.0137667 0.00377481" mass="6.40803" diaginertia="0.0948147 0.0801487 0.0372875"/>
+            <joint name="WAIST" pos="0 0 0" axis="0 0 1" range="-2.96706 2.96706" actuatorfrcrange="-100 100"/>
+            <geom type="mesh" mesh="torso4" group="3" name="default_geom8"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="torso4_body4_006_mesh_0" material="torso4_body4_006_mesh_0.png" name="default_geom9"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="torso4_body4_button_005_mesh_1" material="torso4_body4_button_005_mesh_1.png" name="default_geom10"/>
+            <body name="right_j1" pos="0 -0.0985 0.235" quat="0.5 0.5 0.5 -0.5">
+              <inertial pos="-0.0220977 -0.00679141 0.0949853" quat="0.408173 -0.22471 -0.0816673 0.881039" mass="1.34975" diaginertia="0.00221107 0.00199944 0.000751852"/>
+              <joint name="RIGHT_J1" pos="0 0 0" axis="0 0 1" range="-2.96706 2.96706" actuatorfrcrange="-100 100"/>
+              <geom type="mesh" mesh="armr1" group="3" name="default_geom11"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="armr1_arml1_002_mesh_0" material="armr1_arml1_002_mesh_0.png" name="default_geom12"/>
+              <body name="right_j2" pos="0 0 0.1025" quat="0 0 0.707107 0.707107">
+                <inertial pos="0.0745034 0.00863985 0.00738754" quat="0.337003 0.652138 0.275029 0.620889" mass="1.49289" diaginertia="0.00214735 0.00167402 0.0013105"/>
+                <joint name="RIGHT_J2" pos="0 0 0" axis="0 0 1" range="-1.5708 2.0944" actuatorfrcrange="-100 100"/>
+                <geom type="mesh" mesh="armr2" group="3" name="default_geom13"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="armr2_arml2_005_mesh_0" material="armr2_arml2_005_mesh_0.png" name="default_geom14"/>
+                <body name="right_j3" pos="0 0.26 0" quat="-0.5 0.5 0.5 0.5">
+                  <inertial pos="0.00948492 -0.0235616 0.102951" quat="0.966103 0.203567 0.061474 0.146376" mass="1.49973" diaginertia="0.00371699 0.00349347 0.000963223"/>
+                  <joint name="RIGHT_J3" pos="0 0 0" axis="0 0 1" range="-2.96706 2.96706" actuatorfrcrange="-100 100"/>
+                  <geom type="mesh" mesh="armr3" group="3" name="default_geom15"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="armr3_arml3_005_mesh_0" material="armr3_arml3_005_mesh_0.png" name="default_geom16"/>
+                  <body name="right_j4" quat="0.707107 0.707107 0 0">
+                    <inertial pos="-4.87167e-05 -0.0791393 0.00454173" quat="0.400103 0.562399 -0.588878 0.420532" mass="1.1319" diaginertia="0.00153066 0.00151369 0.000780412"/>
+                    <joint name="RIGHT_J4" pos="0 0 0" axis="0 0 -1" range="-1.5708 2.35619" actuatorfrcrange="-50 50"/>
+                    <geom type="mesh" mesh="armr4" group="3" name="default_geom17"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="armr4_arml4_mesh_0" material="armr4_arml4_mesh_0.png" name="default_geom18"/>
+                    <body name="right_j5" pos="0 0.166 0" quat="0 0 0.707107 0.707107">
+                      <inertial pos="-7.27158e-05 0.016197 0.0477992" quat="0.978924 -0.202114 -0.00459163 -0.0289395" mass="1.18426" diaginertia="0.00171989 0.00166891 0.000851896"/>
+                      <joint name="RIGHT_J5" pos="0 0 0" axis="0 0 1" range="-2.96706 2.96706" actuatorfrcrange="-50 50"/>
+                      <geom type="mesh" mesh="armr5" group="3" name="default_geom19"/>
+                      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="armr5_arml5_mesh_0" material="armr5_arml5_mesh_0.png" name="default_geom20"/>
+                      <body name="right_j6" pos="0 0 0.098" quat="0.707107 0.707107 0 0">
+                        <inertial pos="2.50734e-05 0.00483341 0.00184087" quat="0.999024 -0.00604295 -0.00663849 0.0432383" mass="0.986364" diaginertia="0.000701931 0.000672897 0.000621834"/>
+                        <joint name="RIGHT_J6" pos="0 0 0" axis="0 0 1" range="-0.785398 0.785398" actuatorfrcrange="-50 50"/>
+                        <geom type="mesh" mesh="armr6" group="3" name="default_geom21"/>
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="armr6_armr6_mesh_0" material="armr6_armr6_mesh_0.png" name="default_geom22"/>
+                        <body name="right_j7" quat="-0.5 -0.5 0.5 0.5">
+                          <inertial pos="-0.00179879 0.0241837 -0.0544466" quat="0.556346 0.229571 -0.0180953 0.798404" mass="0.536938" diaginertia="0.000905481 0.000719363 0.000284191"/>
+                          <joint name="RIGHT_J7" pos="0 0 0" axis="0 0 1" range="-1.0472 1.5708" actuatorfrcrange="-50 50"/>
+                          <geom type="mesh" mesh="armr7" group="3" name="default_geom23"/>
+                          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="armr7_arml7_006_mesh_0" material="armr7_arml7_006_mesh_0.png" name="default_geom24"/>
+                          <geom pos="-0.066 0 0" quat="0.5 0.5 -0.5 0.5" type="mesh" mesh="R_base_link" group="3" name="default_geom25"/>
+                          <geom pos="-0.066 0 0" quat="0.5 0.5 -0.5 0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75 0.75294 0.75294 1" mesh="R_base_link_right_hand_base_2_mesh_0" name="default_geom26"/>
+                          <geom pos="-0.066 0 0" quat="0.5 0.5 -0.5 0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75 0.75294 0.75294 1" mesh="R_base_link_right_hand_base_2_mesh_1_1" name="default_geom27"/>
+                          <body name="right_thumb_prox" pos="-0.120024 -0.021628 0.0245" quat="0.361842 0.607511 -0.607511 0.361842">
+                            <inertial pos="0.0062041 -7.9383e-08 0.0015306" quat="0.486357 0.51328 0.51328 0.486357" mass="0.005" diaginertia="9.2485e-08 8.5717e-08 4.0508e-08"/>
+                            <joint name="RIGHT_THUMB_MCP1" pos="0 0 0" axis="0 -1 0" range="0 1.5708"/>
+                            <geom type="mesh" mesh="R_thumb_prox" group="3" name="default_geom28"/>
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="R_thumb_prox_R_thumb_prox_mesh_0" name="default_geom29"/>
+                            <body name="right_thumb_dist" pos="0.013647 0 0" quat="0.878532 -0.103824 0.222655 -0.409666">
+                              <inertial pos="0.0083564 0.037204 -3.5884e-07" quat="0.707048 0.706981 0.0114675 0.0113604" mass="0.04" diaginertia="7.15631e-06 6.8747e-06 9.085e-07"/>
+                              <joint name="RIGHT_THUMB_MCP2" pos="0 0 0" axis="0 0 1" range="0 0.87266"/>
+                              <geom type="mesh" mesh="R_thumb_dist" group="3" name="default_geom30"/>
+                              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="R_thumb_dist_R_thumb_dist_mesh_0" name="default_geom31"/>
+                            </body>
+                          </body>
+                          <body name="right_index_prox" pos="-0.184055 0.0039488 0.029003" quat="0.519336 0.495831 -0.528942 0.452396">
+                            <inertial pos="-5.571e-07 0.016609 0.00045746" quat="0.518542 0.480744 -0.480679 0.518602" mass="0.008" diaginertia="3.72481e-07 3.3526e-07 9.97686e-08"/>
+                            <joint name="RIGHT_INDEX_MCP" pos="0 0 0" axis="1 0 0" range="0 1.309"/>
+                            <geom type="mesh" mesh="R_index_prox" group="3" name="default_geom32"/>
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="R_index_prox_R_index_prox_mesh_0" name="default_geom33"/>
+                            <body name="right_index_dist" pos="0 0.035 0" quat="0.995322 0.0966141 0 0">
+                              <inertial pos="5.9401e-06 0.025449 0.003278" quat="0.464988 0.533023 -0.533381 0.463873" mass="0.011" diaginertia="8.68981e-07 8.48012e-07 1.27508e-07"/>
+                              <joint name="RIGHT_INDEX_PIP" pos="0 0 0" axis="1 0 0" range="0 2.0944"/>
+                              <geom type="mesh" mesh="R_index_dist" group="3" name="default_geom34"/>
+                              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="R_index_dist_R_index_dist_mesh_0" name="default_geom35"/>
+                            </body>
+                          </body>
+                          <body name="right_middle_prox" pos="-0.187759 0.0082038 0.008" quat="0.517145 0.482246 -0.517145 0.482246">
+                            <inertial pos="2.3779e-07 0.020205 0.00053993" quat="0.51393 0.485582 -0.485656 0.514028" mass="0.011" diaginertia="6.02976e-07 5.5624e-07 1.31464e-07"/>
+                            <joint name="RIGHT_MIDDLE_MCP" pos="0 0 0" axis="1 0 0" range="0 1.309"/>
+                            <geom type="mesh" mesh="R_middle_prox" group="3" name="default_geom36"/>
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="R_middle_prox_R_middle_prox_mesh_0" name="default_geom37"/>
+                            <body name="right_middle_dist" pos="0 0.042 0" quat="0.995791 0.0916562 0 0">
+                              <inertial pos="5.9404e-06 0.025449 0.003278" quat="0.464985 0.533021 -0.533384 0.463874" mass="0.011" diaginertia="8.68971e-07 8.48012e-07 1.27507e-07"/>
+                              <joint name="RIGHT_MIDDLE_PIP" pos="0 0 0" axis="1 0 0" range="0 2.0944"/>
+                              <geom type="mesh" mesh="R_middle_dist" group="3" name="default_geom38"/>
+                              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="R_middle_dist_R_middle_dist_mesh_0" name="default_geom39"/>
+                            </body>
+                          </body>
+                          <body name="right_ring_prox" pos="-0.185771 0.0080786 -0.013103" quat="0.524351 0.457709 -0.514308 0.501045">
+                            <inertial pos="2.4507e-07 0.020236 0.00042373" quat="0.514454 0.485027 -0.485101 0.514552" mass="0.011" diaginertia="6.03124e-07 5.5623e-07 1.31316e-07"/>
+                            <joint name="RIGHT_RING_MCP" pos="0 0 0" axis="1 0 0" range="0 1.309"/>
+                            <geom type="mesh" mesh="R_ring_prox" group="3" name="default_geom40"/>
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="R_ring_prox_R_ring_prox_mesh_0" name="default_geom41"/>
+                            <body name="right_ring_dist" pos="0 0.042 0" quat="0.996565 0.08282 0 0">
+                              <inertial pos="5.5799e-07 0.020388 0.0029077" quat="0.461493 0.535513 -0.535785 0.46172" mass="0.008" diaginertia="3.90519e-07 3.6793e-07 7.73788e-08"/>
+                              <joint name="RIGHT_RING_PIP" pos="0 0 0" axis="1 0 0" range="0 2.0944"/>
+                              <geom type="mesh" mesh="R_ring_dist" group="3" name="default_geom42"/>
+                              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="R_ring_dist_R_ring_dist_mesh_0" name="default_geom43"/>
+                            </body>
+                          </body>
+                          <body name="right_little_prox" pos="-0.179551 0.0036339 -0.033731" quat="0.519371 0.444222 -0.526725 0.505452">
+                            <inertial pos="-5.4618e-07 0.016662 0.00040738" quat="0.519207 0.480025 -0.479962 0.519265" mass="0.008" diaginertia="3.72639e-07 3.3526e-07 9.96108e-08"/>
+                            <joint name="RIGHT_LITTLE_MCP" pos="0 0 0" axis="1 0 0" range="0 1.309"/>
+                            <geom type="mesh" mesh="R_little_prox" group="3" name="default_geom44"/>
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="R_little_prox_R_little_prox_mesh_0" name="default_geom45"/>
+                            <body name="right_little_dist" pos="0 0.035 0" quat="0.994856 0.101296 0 0">
+                              <inertial pos="1.062e-05 0.017869 0.0020864" quat="0.468752 0.529699 -0.53072 0.466934" mass="0.008" diaginertia="2.52116e-07 2.32621e-07 6.13461e-08"/>
+                              <joint name="RIGHT_LITTLE_PIP" pos="0 0 0" axis="1 0 0" range="0 2.0944"/>
+                              <geom type="mesh" mesh="R_little_dist" group="3" name="default_geom46"/>
+                              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="R_little_dist_R_little_dist_mesh_0" name="default_geom47"/>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+            <body name="neck1" pos="0 0 0.308">
+              <inertial pos="8.07711e-05 -0.00496177 0.0522519" quat="0.672762 0.217695 -0.217695 0.672762" mass="0.960704" diaginertia="2.00225e-05 1.76989e-05 1.1181e-05"/>
+              <joint name="NECK1" pos="0 0 0" axis="0 0 1" range="-3.14 3.14" actuatorfrcrange="-50 50"/>
+              <geom type="mesh" mesh="head1" group="3" name="default_geom48"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="head1_head1_002_mesh_0" material="head1_head1_002_mesh_0.png" name="default_geom49"/>
+              <body name="neck2" pos="0 0 0.081" quat="0.707107 -0.707107 0 0">
+                <inertial pos="0.0421574 0.0285884 0.00524275" quat="0.661541 0.700197 0.197277 0.182126" mass="0.862226" diaginertia="0.0022621 0.00191292 0.000950183"/>
+                <joint name="NECK2" pos="0 0 0" axis="0 0 -1" range="-0.436332 0.785398" actuatorfrcrange="-50 50"/>
+                <geom type="mesh" mesh="head2" group="3" name="default_geom50"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_0" name="default_geom51"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_1_1" material="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_1_1.png" name="default_geom52"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_2_2" name="default_geom53"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_3_3" name="default_geom54"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="head2_head_001___head_001_stp_1_KFC_SC2210_ASM_2_stp_1_SC22100001_1_s_mesh_4_4" name="default_geom55"/>
+              </body>
+            </body>
+            <body name="left_j1" pos="0 0.0985 0.235" quat="0.5 -0.5 -0.5 -0.5">
+              <inertial pos="-0.0220977 0.00680209 0.0788581" quat="0.665486 -0.239628 -0.021385 0.706576" mass="1.34975" diaginertia="0.00182894 0.00151266 0.000873444"/>
+              <joint name="LEFT_J1" pos="0 0 0" axis="0 0 1" range="-2.96706 2.96706" actuatorfrcrange="-100 100"/>
+              <geom type="mesh" mesh="arml1" group="3" name="default_geom56"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="arml1_arml1_001_mesh_0" material="arml1_arml1_001_mesh_0.png" name="default_geom57"/>
+              <body name="left_j2" pos="0 0 0.1025" quat="0 0 0.707107 0.707107">
+                <inertial pos="0.0744932 0.00547761 0.0112691" quat="0.142974 0.798082 0.114246 0.574083" mass="1.49289" diaginertia="0.00217788 0.00169694 0.00117976"/>
+                <joint name="LEFT_J2" pos="0 0 0" axis="0 0 1" range="-2.0944 1.5708" actuatorfrcrange="-100 100"/>
+                <geom type="mesh" mesh="arml2" group="3" name="default_geom58"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="arml2_arml2_004_mesh_0" material="arml2_arml2_004_mesh_0.png" name="default_geom59"/>
+                <body name="left_j3" pos="0 0.26 0" quat="-0.5 0.5 0.5 0.5">
+                  <inertial pos="-0.0307791 0.0235519 0.0956982" quat="0.797322 -0.209551 0.0893585 0.558911" mass="1.49973" diaginertia="0.00309291 0.00290142 0.00137245"/>
+                  <joint name="LEFT_J3" pos="0 0 0" axis="0 0 1" range="-2.96706 2.96706" actuatorfrcrange="-100 100"/>
+                  <geom type="mesh" mesh="arml3" group="3" name="default_geom60"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="arml3_arml3_003_mesh_0" material="arml3_arml3_003_mesh_0.png" name="default_geom61"/>
+                  <body name="left_j4" quat="0.707107 0.707107 0 0">
+                    <inertial pos="0.0791393 9.02186e-05 0.00464014" quat="0.0231501 0.814426 0.0298383 0.579037" mass="1.1319" diaginertia="0.00153217 0.0015126 0.000777753"/>
+                    <joint name="LEFT_J4" pos="0 0 0" axis="0 0 1" range="-2.35619 1.5708" actuatorfrcrange="-50 50"/>
+                    <geom type="mesh" mesh="arml4" group="3" name="default_geom62"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="arml4_arml4_002_mesh_0" material="arml4_arml4_002_mesh_0.png" name="default_geom63"/>
+                    <body name="left_j5" pos="0 0.166 0" quat="0 0 0.707107 0.707107">
+                      <inertial pos="-6.84521e-05 -0.0163398 0.047773" quat="0.978219 0.205599 -0.00490157 0.0281644" mass="1.18652" diaginertia="0.00173116 0.00167961 0.000853036"/>
+                      <joint name="LEFT_J5" pos="0 0 0" axis="0 0 1" range="-2.96706 2.96706" actuatorfrcrange="-50 50"/>
+                      <geom type="mesh" mesh="arml5" group="3" name="default_geom64"/>
+                      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="arml5_arml5_001_mesh_0" material="arml5_arml5_001_mesh_0.png" name="default_geom65"/>
+                      <body name="left_j6" pos="0 0 0.098" quat="0.707107 0.707107 0 0">
+                        <inertial pos="-6.18323e-05 -0.00486074 0.00184086" quat="0.99939 0.00995682 0.00116265 0.0334604" mass="0.986364" diaginertia="0.000701829 0.000672977 0.000622313"/>
+                        <joint name="LEFT_J6" pos="0 0 0" axis="0 0 -1" range="-0.785398 0.785398" actuatorfrcrange="-50 50"/>
+                        <geom type="mesh" mesh="arml6" group="3" name="default_geom66"/>
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="arml6_arml6_001_mesh_0" material="arml6_arml6_001_mesh_0.png" name="default_geom67"/>
+                        <body name="left_j7" quat="-0.5 -0.5 0.5 0.5">
+                          <inertial pos="0.0072348 -0.0479874 -0.0182062" quat="0.737704 -0.111326 0.13201 0.652665" mass="0.536938" diaginertia="0.00191395 0.00160141 0.0010055"/>
+                          <joint name="LEFT_J7" pos="0 0 0" axis="0 0 1" range="-1.5708 1.0472" actuatorfrcrange="-50 50"/>
+                          <geom type="mesh" mesh="arml7" group="3" name="default_geom68"/>
+                          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="arml7_arml7_005_mesh_0" material="arml7_arml7_005_mesh_0.png" name="default_geom69"/>
+                          <geom pos="-0.066 0 0" quat="0.5 -0.5 0.5 0.5" type="mesh" mesh="L_base_link" group="3" name="default_geom70"/>
+                          <geom pos="-0.066 0 0" quat="0.5 -0.5 0.5 0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="L_base_link_right_hand_base_2_mesh_0" name="default_geom71"/>
+                          <geom pos="-0.066 0 0" quat="0.5 -0.5 0.5 0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="L_base_link_right_hand_base_2_mesh_1_1" name="default_geom72"/>
+                          <body name="left_thumb_prox" pos="-0.120024 0.0216276 0.0245" quat="0.685437 -0.173713 0.173714 0.685436">
+                            <inertial pos="0.0017239 0.0051432 -0.031065" quat="0.663344 0.00923928 0.0504839 0.746552" mass="0.005" diaginertia="0.00133146 0.00103967 0.000525967"/>
+                            <joint name="LEFT_THUMB_MCP1" pos="0 0 0" axis="0 1 0" range="0 1.5708"/>
+                            <geom type="mesh" mesh="L_thumb_prox" group="3" name="default_geom73"/>
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="L_thumb_prox_L_thumb_prox_mesh_0" name="default_geom74"/>
+                            <body name="left_thumb_dist" pos="0 0 0.013647" quat="0.878534 0.409665 -0.222652 0.103824">
+                              <inertial pos="0.0017239 0.0051432 -0.031065" quat="0.663344 0.00923928 0.0504839 0.746552" mass="0.04" diaginertia="0.00133146 0.00103967 0.000525967"/>
+                              <joint name="LEFT_THUMB_MCP2" pos="0 0 0" axis="-1 0 0" range="0 0.8727"/>
+                              <geom type="mesh" mesh="L_thumb_dist" group="3" name="default_geom75"/>
+                              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="L_thumb_dist_L_thumb_dist_mesh_0" name="default_geom76"/>
+                            </body>
+                          </body>
+                          <body name="left_index_prox" pos="-0.184055 -0.00394877 0.029003" quat="0.452396 -0.528942 0.495831 0.519336">
+                            <inertial pos="0.0017239 0.0051432 -0.031065" quat="0.663344 0.00923928 0.0504839 0.746552" mass="0.008" diaginertia="0.00133146 0.00103967 0.000525967"/>
+                            <joint name="LEFT_INDEX_MCP" pos="0 0 0" axis="1 0 0" range="0 1.309"/>
+                            <geom type="mesh" mesh="L_index_prox" group="3" name="default_geom77"/>
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="L_index_prox_L_index_prox_mesh_0" name="default_geom78"/>
+                            <body name="left_index_dist" pos="0 0.035 0" quat="0.995322 0.0966141 0 0">
+                              <inertial pos="0.0017239 0.0051432 -0.031065" quat="0.663344 0.00923928 0.0504839 0.746552" mass="0.011" diaginertia="0.00133146 0.00103967 0.000525967"/>
+                              <joint name="LEFT_INDEX_PIP" pos="0 0 0" axis="1 0 0" range="0 2.0944"/>
+                              <geom type="mesh" mesh="L_index_dist" group="3" name="default_geom79"/>
+                              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="L_index_dist_L_index_dist_mesh_0" name="default_geom80"/>
+                            </body>
+                          </body>
+                          <body name="left_middle_prox" pos="-0.18776 -0.0082038 0.008" quat="0.482246 -0.517145 0.482246 0.517145">
+                            <inertial pos="0.0017239 0.0051432 -0.031065" quat="0.663344 0.00923928 0.0504839 0.746552" mass="0.011" diaginertia="0.00133146 0.00103967 0.000525967"/>
+                            <joint name="LEFT_MIDDLE_MCP" pos="0 0 0" axis="1 0 0" range="0 1.309"/>
+                            <geom type="mesh" mesh="L_middle_prox" group="3" name="default_geom81"/>
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="L_middle_prox_L_middle_prox_mesh_0" name="default_geom82"/>
+                            <body name="left_middle_dist" pos="0 0.042 0" quat="0.995791 0.0916562 0 0">
+                              <inertial pos="0.0017239 0.0051432 -0.031065" quat="0.663344 0.00923928 0.0504839 0.746552" mass="0.011" diaginertia="0.00133146 0.00103967 0.000525967"/>
+                              <joint name="LEFT_MIDDLE_PIP" pos="0 0 0" axis="1 0 0" range="0 2.0944"/>
+                              <geom type="mesh" mesh="L_middle_dist" group="3" name="default_geom83"/>
+                              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="L_middle_dist_L_middle_dist_mesh_0" name="default_geom84"/>
+                            </body>
+                          </body>
+                          <body name="left_ring_prox" pos="-0.185771 -0.00807854 -0.013103" quat="0.501045 -0.514307 0.45771 0.524351">
+                            <inertial pos="0.0017239 0.0051432 -0.031065" quat="0.663344 0.00923928 0.0504839 0.746552" mass="0.011" diaginertia="0.00133146 0.00103967 0.000525967"/>
+                            <joint name="LEFT_RING_MCP" pos="0 0 0" axis="1 0 0" range="0 1.309"/>
+                            <geom type="mesh" mesh="L_ring_prox" group="3" name="default_geom85"/>
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="L_ring_prox_L_ring_prox_mesh_0" name="default_geom86"/>
+                            <body name="left_ring_dist" pos="0 0.042 0" quat="0.996565 0.08282 0 0">
+                              <inertial pos="0.0017239 0.0051432 -0.031065" quat="0.663344 0.00923928 0.0504839 0.746552" mass="0.008" diaginertia="0.00133146 0.00103967 0.000525967"/>
+                              <joint name="LEFT_RING_PIP" pos="0 0 0" axis="1 0 0" range="0 2.0944"/>
+                              <geom type="mesh" mesh="L_ring_dist" group="3" name="default_geom87"/>
+                              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="L_ring_dist_L_ring_dist_mesh_0" name="default_geom88"/>
+                            </body>
+                          </body>
+                          <body name="left_little_prox" pos="-0.179552 -0.00363389 -0.033731" quat="0.505452 -0.526725 0.444222 0.519371">
+                            <inertial pos="0 0 0" quat="0.519207 0.480025 -0.479962 0.519265" mass="0.008" diaginertia="3.72639e-07 3.3526e-07 9.96108e-08"/>
+                            <joint name="LEFT_LITTLE_MCP" pos="0 0 0" axis="1 0 0" range="0 1.309"/>
+                            <geom type="mesh" mesh="L_little_prox" group="3" name="default_geom89"/>
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="L_little_prox_L_little_prox_mesh_0" name="default_geom90"/>
+                            <body name="left_little_dist" pos="0 0.035 0" quat="0.994856 0.101296 0 0">
+                              <inertial pos="0.0017239 0.0051432 -0.031065" quat="0.663344 0.00923928 0.0504839 0.746552" mass="0.008" diaginertia="0.00133146 0.00103967 0.000525967"/>
+                              <joint name="LEFT_LITTLE_PIP" pos="0 0 0" axis="1 0 0" range="0 2.0944"/>
+                              <geom type="mesh" mesh="L_little_dist" group="3" name="default_geom91"/>
+                              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.75294 0.75294 0.75294 1" mesh="L_little_dist_L_little_dist_mesh_0" name="default_geom92"/>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>
